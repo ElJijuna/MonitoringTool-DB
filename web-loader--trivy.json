@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-10-16T06:32:37.339158558Z",
+  "CreatedAt": "2025-10-17T06:31:56.980252318Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:188f13ab443e3927407fefba8f9ba96c6af6de6a090ff278d2a1fca53d6e6c21",
+    "ImageID": "sha256:d0200e545c68fc6358891126bb175dfe4b30373c063b756592fac479a8ef7bf7",
     "DiffIDs": [
       "sha256:1d46119d249f7719e1820e24a311aa7c453f166f714969cffe89504678eaa447",
       "sha256:7efe7270f90c1d6fec7e8372af8c555b5641da9f0d23986ebce76667d805b07e",
@@ -17,15 +17,15 @@
       "sha256:d7664d7d8c3fa28b4904c3986633c2464112480fe420fcaaf75de1e7239b003a",
       "sha256:0e34cd3adc60560b3017ff492d70342d3842b26227784a91d70e410fc1a07caf",
       "sha256:d454a00187b11acee24601393f98890c8b586a6b7a94e08473591f3c843ead39",
-      "sha256:dff051c6d7e6b2a40e29f910c34f00af36ca363254ae034c65aee8d1e3e9ce94",
-      "sha256:d32e835e2c03fcc7517dd5877571062e2c53fcc8251e3f8f3ca08baaad08554c"
+      "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671",
+      "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-10-16T06:32:28.773584744Z",
+      "created": "2025-10-17T06:31:48.517623592Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-10-16T06:32:28Z",
+          "created": "2025-10-17T06:31:48Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-16T06:32:28Z",
+          "created": "2025-10-17T06:31:48Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-16T06:32:28Z",
+          "created": "2025-10-17T06:31:48Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-10-16T06:32:28Z",
+          "created": "2025-10-17T06:31:48Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:d7664d7d8c3fa28b4904c3986633c2464112480fe420fcaaf75de1e7239b003a",
           "sha256:0e34cd3adc60560b3017ff492d70342d3842b26227784a91d70e410fc1a07caf",
           "sha256:d454a00187b11acee24601393f98890c8b586a6b7a94e08473591f3c843ead39",
-          "sha256:dff051c6d7e6b2a40e29f910c34f00af36ca363254ae034c65aee8d1e3e9ce94",
-          "sha256:d32e835e2c03fcc7517dd5877571062e2c53fcc8251e3f8f3ca08baaad08554c"
+          "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671",
+          "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:dff051c6d7e6b2a40e29f910c34f00af36ca363254ae034c65aee8d1e3e9ce94"
+        "DiffID": "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:d32e835e2c03fcc7517dd5877571062e2c53fcc8251e3f8f3ca08baaad08554c"
+        "DiffID": "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
       }
     ]
   },
@@ -11393,6 +11393,7 @@
           ],
           "VendorSeverity": {
             "amazon": 2,
+            "azure": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -12487,6 +12488,7 @@
           ],
           "VendorSeverity": {
             "amazon": 2,
+            "azure": 3,
             "redhat": 2,
             "ubuntu": 2
           },
@@ -12650,6 +12652,7 @@
           ],
           "VendorSeverity": {
             "amazon": 2,
+            "azure": 3,
             "redhat": 2,
             "ubuntu": 2
           },
