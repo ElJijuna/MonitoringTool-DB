@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-10-17T06:31:56.980252318Z",
+  "CreatedAt": "2025-10-18T06:29:35.219368927Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:d0200e545c68fc6358891126bb175dfe4b30373c063b756592fac479a8ef7bf7",
+    "ImageID": "sha256:88da5c9493a358f4ef92d30c7e26bc155e76588f896c8891ddb4ff2ee885e422",
     "DiffIDs": [
       "sha256:1d46119d249f7719e1820e24a311aa7c453f166f714969cffe89504678eaa447",
       "sha256:7efe7270f90c1d6fec7e8372af8c555b5641da9f0d23986ebce76667d805b07e",
@@ -17,15 +17,15 @@
       "sha256:d7664d7d8c3fa28b4904c3986633c2464112480fe420fcaaf75de1e7239b003a",
       "sha256:0e34cd3adc60560b3017ff492d70342d3842b26227784a91d70e410fc1a07caf",
       "sha256:d454a00187b11acee24601393f98890c8b586a6b7a94e08473591f3c843ead39",
-      "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671",
-      "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
+      "sha256:ea14a4d0667c6bfa6c38ca6418df9e8ab3291dea41cf558a89f71161cafce105",
+      "sha256:1fc13e0e06fcf05d3f628fdb8fd17cbd26643c5fd8b6b48331e47d180bad4266"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-10-17T06:31:48.517623592Z",
+      "created": "2025-10-18T06:29:25.377333718Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-10-17T06:31:48Z",
+          "created": "2025-10-18T06:29:25Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-17T06:31:48Z",
+          "created": "2025-10-18T06:29:25Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-17T06:31:48Z",
+          "created": "2025-10-18T06:29:25Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-10-17T06:31:48Z",
+          "created": "2025-10-18T06:29:25Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:d7664d7d8c3fa28b4904c3986633c2464112480fe420fcaaf75de1e7239b003a",
           "sha256:0e34cd3adc60560b3017ff492d70342d3842b26227784a91d70e410fc1a07caf",
           "sha256:d454a00187b11acee24601393f98890c8b586a6b7a94e08473591f3c843ead39",
-          "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671",
-          "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
+          "sha256:ea14a4d0667c6bfa6c38ca6418df9e8ab3291dea41cf558a89f71161cafce105",
+          "sha256:1fc13e0e06fcf05d3f628fdb8fd17cbd26643c5fd8b6b48331e47d180bad4266"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:516a65c514f74307922733aea811a0a814c448c60205346c48700ac1c8cd1671"
+        "DiffID": "sha256:ea14a4d0667c6bfa6c38ca6418df9e8ab3291dea41cf558a89f71161cafce105"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:87bc884f2af1274a51d97b4824f4b36c371caca2198a5c33d14f882ca66ec2e3"
+        "DiffID": "sha256:1fc13e0e06fcf05d3f628fdb8fd17cbd26643c5fd8b6b48331e47d180bad4266"
       }
     ]
   },
@@ -9561,6 +9561,7 @@
           "Description": "curl's websocket code did not update the 32 bit mask pattern for each new\n outgoing frame as the specification says. Instead it used a fixed mask that\npersisted and was used throughout the entire connection.\n\nA predictable mask pattern allows for a malicious server to induce traffic\nbetween the two communicating parties that could be interpreted by an involved\nproxy (configured or transparent) as genuine, real, HTTP traffic with content\nand thereby poison its cache. That cached poisoned content could then be\nserved to all users of that proxy.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
+            "cbl-mariner": 2,
             "redhat": 1,
             "ubuntu": 1
           },
@@ -9652,6 +9653,7 @@
           ],
           "VendorSeverity": {
             "amazon": 3,
+            "cbl-mariner": 2,
             "photon": 3,
             "redhat": 3
           },
