@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-10-25T06:29:42.434143217Z",
+  "CreatedAt": "2025-10-26T06:30:29.841763546Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:5170d8d6970728972498692ce4b2a621533905341d68e44f9a702d27d5c8fe17",
+    "ImageID": "sha256:fb770b70d92333b4d66a5f6dc8309dc70ff656eeb1425bfd2f1d3113a886b249",
     "DiffIDs": [
       "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
       "sha256:1a46d6e7f73c0e036cc09d6d187f168fd1aec22ad8da3e4068e1f8967e4e98e1",
@@ -17,15 +17,15 @@
       "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
       "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
       "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-      "sha256:e870e44fbcc4af66460567fd9b99877dfad5de8fdb31462bc137905df06495b6",
-      "sha256:b80fcaa2c7eb2ed0126fe4b3e0b4df32adfc3f7a3303bb4c03d8a91120c1d5dc"
+      "sha256:8edf0f4c1c8c93a4bedf44b4571314a332be3f8cce445ded15101eae79d74b05",
+      "sha256:4c30de1a32045e7fe508b9a6f94b6bd128b88cbd76355dc3eb62426abfde0ad5"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-10-25T06:29:32.025785833Z",
+      "created": "2025-10-26T06:30:20.595874246Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-10-25T06:29:32Z",
+          "created": "2025-10-26T06:30:20Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-25T06:29:32Z",
+          "created": "2025-10-26T06:30:20Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-25T06:29:32Z",
+          "created": "2025-10-26T06:30:20Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-10-25T06:29:32Z",
+          "created": "2025-10-26T06:30:20Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
           "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
           "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-          "sha256:e870e44fbcc4af66460567fd9b99877dfad5de8fdb31462bc137905df06495b6",
-          "sha256:b80fcaa2c7eb2ed0126fe4b3e0b4df32adfc3f7a3303bb4c03d8a91120c1d5dc"
+          "sha256:8edf0f4c1c8c93a4bedf44b4571314a332be3f8cce445ded15101eae79d74b05",
+          "sha256:4c30de1a32045e7fe508b9a6f94b6bd128b88cbd76355dc3eb62426abfde0ad5"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:e870e44fbcc4af66460567fd9b99877dfad5de8fdb31462bc137905df06495b6"
+        "DiffID": "sha256:8edf0f4c1c8c93a4bedf44b4571314a332be3f8cce445ded15101eae79d74b05"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:b80fcaa2c7eb2ed0126fe4b3e0b4df32adfc3f7a3303bb4c03d8a91120c1d5dc"
+        "DiffID": "sha256:4c30de1a32045e7fe508b9a6f94b6bd128b88cbd76355dc3eb62426abfde0ad5"
       }
     ]
   },
@@ -11308,6 +11308,50 @@
           ],
           "PublishedDate": "2022-02-21T19:15:08.393Z",
           "LastModifiedDate": "2025-06-09T16:15:33.237Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-52099",
+          "PkgID": "libsqlite3-0@3.46.1-7",
+          "PkgName": "libsqlite3-0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.1",
+            "UID": "d3b12dcb7bd33f74"
+          },
+          "InstalledVersion": "3.46.1-7",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-52099",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "sqlite: SQLite integer overflow",
+          "Description": "Integer Overflow vulnerability in SQLite SQLite3 v.3.50.0 allows a remote attacker to cause a denial of service via the setupLookaside function",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-190"
+          ],
+          "VendorSeverity": {
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 5.3
+            }
+          },
+          "References": [
+            "http://sqlite3.com",
+            "https://access.redhat.com/security/cve/CVE-2025-52099",
+            "https://github.com/SCREAMBBY/CVE-2025-52099",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-52099",
+            "https://www.cve.org/CVERecord?id=CVE-2025-52099"
+          ],
+          "PublishedDate": "2025-10-24T21:15:40.193Z",
+          "LastModifiedDate": "2025-10-24T21:15:40.193Z"
         },
         {
           "VulnerabilityID": "CVE-2025-7709",
