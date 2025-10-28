@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-10-27T06:36:24.442531403Z",
+  "CreatedAt": "2025-10-28T06:34:44.382071467Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:c18815d9ae87d9155de6aadbd838b468da06989a68ec9f3eed4aba6c58c0bfa7",
+    "ImageID": "sha256:698c3bc6a7a5967d7098cb3fe4b8fdd19a375776a4bd1e56af9eb7765d50d6c6",
     "DiffIDs": [
       "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
       "sha256:1a46d6e7f73c0e036cc09d6d187f168fd1aec22ad8da3e4068e1f8967e4e98e1",
@@ -17,15 +17,15 @@
       "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
       "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
       "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-      "sha256:663f3daa15621c06444ca1cf69c9d663e44cf194e6dbe32688ba375081a5fcde",
-      "sha256:ba4db9de913018551681561a3a4736a1a958188131d01c3b95623521c8a143c3"
+      "sha256:ed8ea296700a186e829925ef636fb93c968d22d5f4f42e77c27704799898215a",
+      "sha256:5f311cc2e7dc64ee00da979ee4997417fb60e1fa4e96dff3e35d17c744c23478"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-10-27T06:36:16.344568395Z",
+      "created": "2025-10-28T06:34:35.712536292Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-10-27T06:36:16Z",
+          "created": "2025-10-28T06:34:35Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-27T06:36:16Z",
+          "created": "2025-10-28T06:34:35Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-27T06:36:16Z",
+          "created": "2025-10-28T06:34:35Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-10-27T06:36:16Z",
+          "created": "2025-10-28T06:34:35Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
           "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
           "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-          "sha256:663f3daa15621c06444ca1cf69c9d663e44cf194e6dbe32688ba375081a5fcde",
-          "sha256:ba4db9de913018551681561a3a4736a1a958188131d01c3b95623521c8a143c3"
+          "sha256:ed8ea296700a186e829925ef636fb93c968d22d5f4f42e77c27704799898215a",
+          "sha256:5f311cc2e7dc64ee00da979ee4997417fb60e1fa4e96dff3e35d17c744c23478"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:663f3daa15621c06444ca1cf69c9d663e44cf194e6dbe32688ba375081a5fcde"
+        "DiffID": "sha256:ed8ea296700a186e829925ef636fb93c968d22d5f4f42e77c27704799898215a"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:ba4db9de913018551681561a3a4736a1a958188131d01c3b95623521c8a143c3"
+        "DiffID": "sha256:5f311cc2e7dc64ee00da979ee4997417fb60e1fa4e96dff3e35d17c744c23478"
       }
     ]
   },
@@ -11189,7 +11189,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-62813"
           ],
           "PublishedDate": "2025-10-23T04:17:26.35Z",
-          "LastModifiedDate": "2025-10-23T04:17:26.35Z"
+          "LastModifiedDate": "2025-10-27T13:20:33.35Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
