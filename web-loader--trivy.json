@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-10-29T06:35:04.661628617Z",
+  "CreatedAt": "2025-10-30T06:32:55.973096659Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:b2819193c62aeb8ce2c99f5717d778176cc0dd4c609d5c23544497fa83d0a2d9",
+    "ImageID": "sha256:0725d9fbde076d662af58e180faecbab27580ed720b35655108550ea51bbad3e",
     "DiffIDs": [
       "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
       "sha256:1a46d6e7f73c0e036cc09d6d187f168fd1aec22ad8da3e4068e1f8967e4e98e1",
@@ -17,15 +17,15 @@
       "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
       "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
       "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-      "sha256:c8e9c9bbf63e73940e0325edf800e4233fffee48211b1bc31969252ad56c9ec1",
-      "sha256:acc64bc51049442e5bcbcf6a22af3c67d248f8fe4434408eb4534e37e5fd624f"
+      "sha256:6d6461074ac554bcc32baa9c4f94ab96593b38038e608a9ba76b1f8ab94bb8f5",
+      "sha256:ef954524966a54df0d86d3b64a80b5b00ab7adac114853c96e1221dcd8d43c84"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-10-29T06:34:54.781120701Z",
+      "created": "2025-10-30T06:32:47.701568096Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-10-29T06:34:54Z",
+          "created": "2025-10-30T06:32:47Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-29T06:34:54Z",
+          "created": "2025-10-30T06:32:47Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-10-29T06:34:54Z",
+          "created": "2025-10-30T06:32:47Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-10-29T06:34:54Z",
+          "created": "2025-10-30T06:32:47Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
           "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
           "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-          "sha256:c8e9c9bbf63e73940e0325edf800e4233fffee48211b1bc31969252ad56c9ec1",
-          "sha256:acc64bc51049442e5bcbcf6a22af3c67d248f8fe4434408eb4534e37e5fd624f"
+          "sha256:6d6461074ac554bcc32baa9c4f94ab96593b38038e608a9ba76b1f8ab94bb8f5",
+          "sha256:ef954524966a54df0d86d3b64a80b5b00ab7adac114853c96e1221dcd8d43c84"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:c8e9c9bbf63e73940e0325edf800e4233fffee48211b1bc31969252ad56c9ec1"
+        "DiffID": "sha256:6d6461074ac554bcc32baa9c4f94ab96593b38038e608a9ba76b1f8ab94bb8f5"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:acc64bc51049442e5bcbcf6a22af3c67d248f8fe4434408eb4534e37e5fd624f"
+        "DiffID": "sha256:ef954524966a54df0d86d3b64a80b5b00ab7adac114853c96e1221dcd8d43c84"
       }
     ]
   },
@@ -8591,6 +8591,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 2,
+            "photon": 2,
             "redhat": 2
           },
           "CVSS": {
@@ -9563,6 +9564,7 @@
           "VendorSeverity": {
             "azure": 2,
             "cbl-mariner": 2,
+            "photon": 2,
             "redhat": 1,
             "ubuntu": 1
           },
@@ -9606,6 +9608,7 @@
           "Description": "1. A cookie is set using the `secure` keyword for `https://target`\n2. curl is redirected to or otherwise made to speak with `http://target` (same\n   hostname, but using clear text HTTP) using the same cookie set\n3. The same cookie name is set - but with just a slash as path (`path='/'`).\n   Since this site is not secure, the cookie *should* just be ignored.\n4. A bug in the path comparison logic makes curl read outside a heap buffer\n   boundary\n\nThe bug either causes a crash or it potentially makes the comparison come to\nthe wrong conclusion and lets the clear-text site override the contents of the\nsecure cookie, contrary to expectations and depending on the memory contents\nimmediately following the single-byte allocation that holds the path.\n\nThe presumed and correct behavior would be to plainly ignore the second set of\nthe cookie since it was already set as secure on a secure host so overriding\nit on an insecure host should not be okay.",
           "Severity": "MEDIUM",
           "VendorSeverity": {
+            "photon": 3,
             "redhat": 2,
             "ubuntu": 1
           },
@@ -9852,6 +9855,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10042,6 +10046,7 @@
             "cbl-mariner": 3,
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10094,6 +10099,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10283,6 +10289,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10472,6 +10479,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10777,6 +10785,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -10830,6 +10839,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -10887,6 +10897,7 @@
             "bitnami": 2,
             "debian": 1,
             "nvd": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -11006,6 +11017,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -11059,6 +11071,7 @@
           "VendorSeverity": {
             "debian": 1,
             "nvd": 3,
+            "photon": 3,
             "redhat": 2
           },
           "CVSS": {
@@ -11116,6 +11129,7 @@
             "bitnami": 2,
             "debian": 1,
             "nvd": 2,
+            "photon": 2,
             "redhat": 1
           },
           "CVSS": {
@@ -11148,50 +11162,6 @@
           ],
           "PublishedDate": "2020-07-14T14:15:17.667Z",
           "LastModifiedDate": "2024-11-21T05:06:05.903Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-62813",
-          "PkgID": "liblz4-1@1.10.0-4",
-          "PkgName": "liblz4-1",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/liblz4-1@1.10.0-4?arch=amd64\u0026distro=debian-13.1",
-            "UID": "5be603ddb02c650f"
-          },
-          "InstalledVersion": "1.10.0-4",
-          "Status": "affected",
-          "Layer": {
-            "DiffID": "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-62813",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Title": "lz4: LZ4 null handling error",
-          "Description": "LZ4 through 1.10.0 allows attackers to cause a denial of service (application crash) or possibly have unspecified other impact when the application processes untrusted LZ4 frames. For example, LZ4F_createCDict_advanced in lib/lz4frame.c mishandles NULL checks.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-158"
-          ],
-          "VendorSeverity": {
-            "redhat": 2
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H",
-              "V3Score": 5.9
-            }
-          },
-          "References": [
-            "https://access.redhat.com/security/cve/CVE-2025-62813",
-            "https://github.com/lz4/lz4/commit/f64efec011c058bd70348576438abac222fe6c82",
-            "https://github.com/lz4/lz4/pull/1593",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-62813",
-            "https://www.cve.org/CVERecord?id=CVE-2025-62813"
-          ],
-          "PublishedDate": "2025-10-23T04:17:26.35Z",
-          "LastModifiedDate": "2025-10-27T13:20:33.35Z"
         },
         {
           "VulnerabilityID": "CVE-2022-0563",
