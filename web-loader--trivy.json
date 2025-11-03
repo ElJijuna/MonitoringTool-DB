@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-02T06:31:26.841166762Z",
+  "CreatedAt": "2025-11-03T06:35:17.093529986Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:e526ddd4ed83c33c29abc59db48812bb7b423ea7e6b1172d3cf319535c2c80ea",
+    "ImageID": "sha256:209d0f9b9c98e6d9cba7b9611941e138951c0c9164170ce6915c2d30bbce2842",
     "DiffIDs": [
       "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
       "sha256:1a46d6e7f73c0e036cc09d6d187f168fd1aec22ad8da3e4068e1f8967e4e98e1",
@@ -17,15 +17,15 @@
       "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
       "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
       "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-      "sha256:90c78ed63d17e6c7534dd6ca7d15f1c218542843d918a086d274258a95b06cf8",
-      "sha256:2234da995a0247ea239b408c05ce564834ca7e03f3d54fe3b6eb32625649efef"
+      "sha256:abc47262e9dcd8add78b1516c56c9e0b3a375260f94aef63e2477010404781da",
+      "sha256:ddf5a1a58add8d2ef5728a45e9ce5fd0316b9002c65dda84d8ac2b85a55a0abe"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-02T06:31:18.624034656Z",
+      "created": "2025-11-03T06:35:08.843347444Z",
       "history": [
         {
           "created": "2025-08-08T19:04:23Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-02T06:31:18Z",
+          "created": "2025-11-03T06:35:08Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-02T06:31:18Z",
+          "created": "2025-11-03T06:35:08Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-02T06:31:18Z",
+          "created": "2025-11-03T06:35:08Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-02T06:31:18Z",
+          "created": "2025-11-03T06:35:08Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:9b9125eabbd9d9711bebaa9484ef42dc9b0b92dcd98d6f44ebe26870ef69ef71",
           "sha256:f8c308326eb45be162a3c4e912301fbe858ea710a5f99edc07ec2f2261cb95c9",
           "sha256:dfc51b2a5ad44f5b934364556102a48bdd8574ef31c5604031625895bef52dd4",
-          "sha256:90c78ed63d17e6c7534dd6ca7d15f1c218542843d918a086d274258a95b06cf8",
-          "sha256:2234da995a0247ea239b408c05ce564834ca7e03f3d54fe3b6eb32625649efef"
+          "sha256:abc47262e9dcd8add78b1516c56c9e0b3a375260f94aef63e2477010404781da",
+          "sha256:ddf5a1a58add8d2ef5728a45e9ce5fd0316b9002c65dda84d8ac2b85a55a0abe"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:90c78ed63d17e6c7534dd6ca7d15f1c218542843d918a086d274258a95b06cf8"
+        "DiffID": "sha256:abc47262e9dcd8add78b1516c56c9e0b3a375260f94aef63e2477010404781da"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:2234da995a0247ea239b408c05ce564834ca7e03f3d54fe3b6eb32625649efef"
+        "DiffID": "sha256:ddf5a1a58add8d2ef5728a45e9ce5fd0316b9002c65dda84d8ac2b85a55a0abe"
       }
     ]
   },
