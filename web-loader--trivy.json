@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-05T06:34:22.812559408Z",
+  "CreatedAt": "2025-11-06T06:34:30.515506175Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:3330a7dc386ac3bf2f874a905e423d7ea685aa43fdd1984ba0e1a6e613f7fde2",
+    "ImageID": "sha256:c1f28e211536c25a3a5432eba67f9e02fec84cd75a9e457b5664fa16d8bd1af5",
     "DiffIDs": [
       "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4",
       "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b",
@@ -17,15 +17,15 @@
       "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
       "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
       "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-      "sha256:1368313c2ec3c512647521226196e45855f4fa3998aaf519717ccab4ebfc7222",
-      "sha256:fb3ac1a3c3675cf45f8ce2b2018920d17f21829da40528cf8e75483710bb7021"
+      "sha256:236c22c68b29ec823809087ed48e2bbd5ab9fd695909227a9bb11da61bc2957a",
+      "sha256:8d2d488c3d98ab5e0dbb6db4c949d6cbe85f0137fe88a3d858c4c526f387d82a"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-05T06:34:14.489719279Z",
+      "created": "2025-11-06T06:34:20.790010376Z",
       "history": [
         {
           "created": "2025-11-03T20:44:10Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-05T06:34:14Z",
+          "created": "2025-11-06T06:34:20Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-05T06:34:14Z",
+          "created": "2025-11-06T06:34:20Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-05T06:34:14Z",
+          "created": "2025-11-06T06:34:20Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-05T06:34:14Z",
+          "created": "2025-11-06T06:34:20Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
           "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
           "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-          "sha256:1368313c2ec3c512647521226196e45855f4fa3998aaf519717ccab4ebfc7222",
-          "sha256:fb3ac1a3c3675cf45f8ce2b2018920d17f21829da40528cf8e75483710bb7021"
+          "sha256:236c22c68b29ec823809087ed48e2bbd5ab9fd695909227a9bb11da61bc2957a",
+          "sha256:8d2d488c3d98ab5e0dbb6db4c949d6cbe85f0137fe88a3d858c4c526f387d82a"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:1368313c2ec3c512647521226196e45855f4fa3998aaf519717ccab4ebfc7222"
+        "DiffID": "sha256:236c22c68b29ec823809087ed48e2bbd5ab9fd695909227a9bb11da61bc2957a"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:fb3ac1a3c3675cf45f8ce2b2018920d17f21829da40528cf8e75483710bb7021"
+        "DiffID": "sha256:8d2d488c3d98ab5e0dbb6db4c949d6cbe85f0137fe88a3d858c4c526f387d82a"
       }
     ]
   },
@@ -9576,6 +9576,8 @@
             }
           },
           "References": [
+            "http://www.openwall.com/lists/oss-security/2025/09/10/2",
+            "http://www.openwall.com/lists/oss-security/2025/09/10/3",
             "https://access.redhat.com/security/cve/CVE-2025-10148",
             "https://curl.se/docs/CVE-2025-10148.html",
             "https://curl.se/docs/CVE-2025-10148.json",
@@ -9584,7 +9586,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-10148"
           ],
           "PublishedDate": "2025-09-12T06:15:40.02Z",
-          "LastModifiedDate": "2025-09-15T15:21:42.937Z"
+          "LastModifiedDate": "2025-11-04T22:16:05.137Z"
         },
         {
           "VulnerabilityID": "CVE-2025-9086",
@@ -9620,6 +9622,7 @@
             }
           },
           "References": [
+            "http://www.openwall.com/lists/oss-security/2025/09/10/1",
             "https://access.redhat.com/security/cve/CVE-2025-9086",
             "https://curl.se/docs/CVE-2025-9086.html",
             "https://curl.se/docs/CVE-2025-9086.json",
@@ -9629,7 +9632,32 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-9086"
           ],
           "PublishedDate": "2025-09-12T06:15:44.1Z",
-          "LastModifiedDate": "2025-09-15T15:21:42.937Z"
+          "LastModifiedDate": "2025-11-04T22:16:45.19Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-10966",
+          "PkgID": "libcurl4t64@8.14.1-2",
+          "PkgName": "libcurl4t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
+            "UID": "3e2ea19da6a06f1d"
+          },
+          "InstalledVersion": "8.14.1-2",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+          },
+          "SeveritySource": "debian",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-10966",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Severity": "LOW",
+          "VendorSeverity": {
+            "debian": 1
+          }
         },
         {
           "VulnerabilityID": "CVE-2025-11563",
@@ -9692,6 +9720,7 @@
             }
           },
           "References": [
+            "http://www.openwall.com/lists/oss-security/2025/09/16/2",
             "https://access.redhat.com/security/cve/CVE-2025-59375",
             "https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74",
             "https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes",
@@ -9704,7 +9733,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-59375"
           ],
           "PublishedDate": "2025-09-15T03:15:40.92Z",
-          "LastModifiedDate": "2025-10-17T19:26:36.673Z"
+          "LastModifiedDate": "2025-11-04T22:16:34.927Z"
         },
         {
           "VulnerabilityID": "CVE-2011-3389",
@@ -9931,7 +9960,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -9949,16 +9978,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -9999,7 +10027,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -10017,16 +10045,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -10173,7 +10200,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -10191,16 +10218,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -10241,7 +10267,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -10259,16 +10285,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -10362,7 +10387,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -10380,16 +10405,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -10430,7 +10454,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -10448,16 +10472,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -10551,7 +10574,7 @@
             "CWE-401"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 2,
             "cbl-mariner": 2,
@@ -10569,16 +10592,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26458",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_1.md",
             "https://linux.oracle.com/cve/CVE-2024-26458.html",
@@ -10619,7 +10641,7 @@
             "CWE-770"
           ],
           "VendorSeverity": {
-            "alma": 2,
+            "alma": 1,
             "amazon": 2,
             "azure": 3,
             "cbl-mariner": 3,
@@ -10637,16 +10659,15 @@
             }
           },
           "References": [
-            "https://access.redhat.com/errata/RHSA-2024:9331",
+            "https://access.redhat.com/errata/RHSA-2024:3268",
             "https://access.redhat.com/security/cve/CVE-2024-26461",
             "https://bugzilla.redhat.com/2266731",
             "https://bugzilla.redhat.com/2266740",
-            "https://bugzilla.redhat.com/2266742",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266731",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2266740",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26458",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-26461",
-            "https://errata.almalinux.org/9/ALSA-2024-9331.html",
+            "https://errata.almalinux.org/8/ALSA-2024-3268.html",
             "https://errata.rockylinux.org/RLSA-2024:3268",
             "https://github.com/LuMingYinDetect/krb5_defects/blob/main/krb5_detect_2.md",
             "https://linux.oracle.com/cve/CVE-2024-26461.html",
@@ -11325,12 +11346,13 @@
             "ubuntu": 2
           },
           "References": [
+            "http://www.openwall.com/lists/oss-security/2025/09/06/2",
             "https://github.com/google/security-research/security/advisories/GHSA-v2c8-vqqp-hv3g",
             "https://ubuntu.com/security/notices/USN-7751-1",
             "https://www.cve.org/CVERecord?id=CVE-2025-7709"
           ],
           "PublishedDate": "2025-09-08T15:15:38.18Z",
-          "LastModifiedDate": "2025-09-08T16:25:38.81Z"
+          "LastModifiedDate": "2025-11-04T22:16:44.2Z"
         },
         {
           "VulnerabilityID": "CVE-2021-45346",
