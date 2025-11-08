@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-07T06:34:13.31628639Z",
+  "CreatedAt": "2025-11-08T06:30:19.956999996Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:f5ae6a46a58ecf916b17f496e37bbb46c0361ac07018ee712b4f5ff5db07090b",
+    "ImageID": "sha256:d88703718c18c8e56dc88c253abb014b8707c2a7804e1e0b148e3443902d1551",
     "DiffIDs": [
       "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4",
       "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b",
@@ -17,15 +17,15 @@
       "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
       "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
       "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-      "sha256:3fbda26583e30e76b5e1f8a791ebcc2b49d963fadac27f8bb606cc5fad4407ae",
-      "sha256:c82462c5c0d0350cde8998fcf7599d8d8713396535ed7517e0c133f977df6a90"
+      "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3",
+      "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-07T06:34:04.007786372Z",
+      "created": "2025-11-08T06:30:09.939331473Z",
       "history": [
         {
           "created": "2025-11-03T20:44:10Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-07T06:34:03Z",
+          "created": "2025-11-08T06:30:09Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-07T06:34:04Z",
+          "created": "2025-11-08T06:30:09Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-07T06:34:04Z",
+          "created": "2025-11-08T06:30:09Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-07T06:34:04Z",
+          "created": "2025-11-08T06:30:09Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
           "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
           "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-          "sha256:3fbda26583e30e76b5e1f8a791ebcc2b49d963fadac27f8bb606cc5fad4407ae",
-          "sha256:c82462c5c0d0350cde8998fcf7599d8d8713396535ed7517e0c133f977df6a90"
+          "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3",
+          "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:3fbda26583e30e76b5e1f8a791ebcc2b49d963fadac27f8bb606cc5fad4407ae"
+        "DiffID": "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:c82462c5c0d0350cde8998fcf7599d8d8713396535ed7517e0c133f977df6a90"
+        "DiffID": "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
       }
     ]
   },
@@ -9683,10 +9683,20 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
+          "Title": "curl's code for managing SSH connections when SFTP was done using the  ...",
+          "Description": "curl's code for managing SSH connections when SFTP was done using the wolfSSH\npowered backend was flawed and missed host verification mechanisms.\n\nThis prevents curl from detecting MITM attackers and more.",
           "Severity": "LOW",
           "VendorSeverity": {
             "debian": 1
-          }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2025/11/05/2",
+            "https://curl.se/docs/CVE-2025-10966.html",
+            "https://curl.se/docs/CVE-2025-10966.json",
+            "https://hackerone.com/reports/3355218"
+          ],
+          "PublishedDate": "2025-11-07T08:15:39.617Z",
+          "LastModifiedDate": "2025-11-07T08:15:39.617Z"
         },
         {
           "VulnerabilityID": "CVE-2025-59375",
