@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-08T06:30:19.956999996Z",
+  "CreatedAt": "2025-11-09T06:30:41.781252714Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:d88703718c18c8e56dc88c253abb014b8707c2a7804e1e0b148e3443902d1551",
+    "ImageID": "sha256:835e6477a287e26acb0b3d4bfab3153608db0fe0a52eb222788812cea8b318ea",
     "DiffIDs": [
       "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4",
       "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b",
@@ -17,15 +17,15 @@
       "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
       "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
       "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-      "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3",
-      "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
+      "sha256:08580cb63f9c9d17633f0f5155fe6c564234d4513e3f66c874475dc4c687c9c6",
+      "sha256:3c27941da7d2b1320374392d899170b7c8a227700a38cc2b590939362d634b00"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-08T06:30:09.939331473Z",
+      "created": "2025-11-09T06:30:32.969692333Z",
       "history": [
         {
           "created": "2025-11-03T20:44:10Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-08T06:30:09Z",
+          "created": "2025-11-09T06:30:32Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-08T06:30:09Z",
+          "created": "2025-11-09T06:30:32Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-08T06:30:09Z",
+          "created": "2025-11-09T06:30:32Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-08T06:30:09Z",
+          "created": "2025-11-09T06:30:32Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
           "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
           "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-          "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3",
-          "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
+          "sha256:08580cb63f9c9d17633f0f5155fe6c564234d4513e3f66c874475dc4c687c9c6",
+          "sha256:3c27941da7d2b1320374392d899170b7c8a227700a38cc2b590939362d634b00"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:5cc1a42a8223a06e1e1e96169d2161c12674829c9abfb945def11f6f9eb3a1b3"
+        "DiffID": "sha256:08580cb63f9c9d17633f0f5155fe6c564234d4513e3f66c874475dc4c687c9c6"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:6270f2a23fff30a9aa083e246c61d74c30678f8823f8e1f84e87435f6e7998cb"
+        "DiffID": "sha256:3c27941da7d2b1320374392d899170b7c8a227700a38cc2b590939362d634b00"
       }
     ]
   },
@@ -9683,17 +9683,28 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Title": "curl's code for managing SSH connections when SFTP was done using the  ...",
+          "Title": "curl: Curl missing SFTP host verification with wolfSSH backend",
           "Description": "curl's code for managing SSH connections when SFTP was done using the wolfSSH\npowered backend was flawed and missed host verification mechanisms.\n\nThis prevents curl from detecting MITM attackers and more.",
           "Severity": "LOW",
           "VendorSeverity": {
-            "debian": 1
+            "debian": 1,
+            "redhat": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "V3Score": 5.9
+            }
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/11/05/2",
+            "https://access.redhat.com/security/cve/CVE-2025-10966",
             "https://curl.se/docs/CVE-2025-10966.html",
             "https://curl.se/docs/CVE-2025-10966.json",
-            "https://hackerone.com/reports/3355218"
+            "https://github.com/curl/curl/commit/b011e3fcfb06d6c027859",
+            "https://hackerone.com/reports/3355218",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-10966",
+            "https://www.cve.org/CVERecord?id=CVE-2025-10966"
           ],
           "PublishedDate": "2025-11-07T08:15:39.617Z",
           "LastModifiedDate": "2025-11-07T08:15:39.617Z"
@@ -11925,6 +11936,49 @@
           ],
           "PublishedDate": "2022-02-21T19:15:08.393Z",
           "LastModifiedDate": "2025-06-09T16:15:33.237Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-12863",
+          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "PkgName": "libxml2",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
+            "UID": "eb95d39440cc9c37"
+          },
+          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-12863",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: Namespace Use-After-Free in xmlSetTreeDoc() function of libxml2",
+          "Description": "A flaw was found in the xmlSetTreeDoc() function of the libxml2 XML parsing library. This function is responsible for updating document pointers when XML nodes are moved between documents. Due to improper handling of namespace references, a namespace pointer may remain linked to a freed memory region when the original document is destroyed. As a result, subsequent operations that access the namespace can lead to a use-after-free condition, causing an application crash.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "redhat": 3
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-12863",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2413323",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-12863",
+            "https://www.cve.org/CVERecord?id=CVE-2025-12863"
+          ],
+          "PublishedDate": "2025-11-07T21:15:40.393Z",
+          "LastModifiedDate": "2025-11-07T21:15:40.393Z"
         },
         {
           "VulnerabilityID": "CVE-2025-9714",
