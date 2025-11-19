@@ -1,128 +1,128 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-18T06:33:51.984472078Z",
+  "CreatedAt": "2025-11-19T06:34:01.312440329Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 120201216,
+    "Size": 120202752,
     "OS": {
       "Family": "debian",
-      "Name": "13.1"
+      "Name": "13.2"
     },
-    "ImageID": "sha256:709c2592e1b21849bdc0918bb63be9707b21a385e35f05165b1d915ffe4d7efd",
+    "ImageID": "sha256:4057f05bc8a0ed828a95f23fcdfd2d0fcd544a9a1827d7a6a468a3941ec80a17",
     "DiffIDs": [
-      "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4",
-      "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b",
+      "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb",
+      "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad",
       "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-      "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
-      "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
-      "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-      "sha256:89ab519bbeca875ddb0ca183e6a672968470593b738a33921fb50407373c65a6",
-      "sha256:fdd30bab909b84f7971fe6b9d832a03b7a348478e3e881c2716ad6651bf17a70"
+      "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
+      "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
+      "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
+      "sha256:802f99ba2ca96ebc9f0d0d8976d4f8f449ae743cf712fdaeebfa6879e785c228",
+      "sha256:b101c3141a6c2a989c8cb9d861b0f2617cae4b42c00c710aa0e07ae6a726e213"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-18T06:33:43.377606744Z",
+      "created": "2025-11-19T06:33:51.942180079Z",
       "history": [
         {
-          "created": "2025-11-03T20:44:10Z",
-          "created_by": "# debian.sh --arch 'amd64' out/ 'trixie' '@1762202650'",
+          "created": "2025-11-17T00:00:00Z",
+          "created_by": "# debian.sh --arch 'amd64' out/ 'trixie' '@1763337600'",
           "comment": "debuerreotype 0.16"
         },
         {
-          "created": "2025-11-04T04:05:09Z",
+          "created": "2025-11-18T04:17:55Z",
           "created_by": "ENV HTTPD_PREFIX=/usr/local/apache2",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:05:09Z",
+          "created": "2025-11-18T04:17:55Z",
           "created_by": "ENV PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:05:09Z",
+          "created": "2025-11-18T04:17:55Z",
           "created_by": "RUN /bin/sh -c mkdir -p \"$HTTPD_PREFIX\" \t\u0026\u0026 chown www-data:www-data \"$HTTPD_PREFIX\" # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-04T04:05:09Z",
+          "created": "2025-11-18T04:17:55Z",
           "created_by": "WORKDIR /usr/local/apache2",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-04T04:05:15Z",
+          "created": "2025-11-18T04:18:00Z",
           "created_by": "RUN /bin/sh -c set -eux; \tapt-get install --update -y --no-install-recommends \t\tca-certificates \t\tlibaprutil1-ldap \t\tlibldap-common \t; \tapt-get dist-clean # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-04T04:05:15Z",
+          "created": "2025-11-18T04:18:00Z",
           "created_by": "ENV HTTPD_VERSION=2.4.65",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:05:15Z",
+          "created": "2025-11-18T04:18:00Z",
           "created_by": "ENV HTTPD_SHA256=58b8be97d9940ec17f7656c0c6b9f41b618aac468b894b534148e3296c53b8b3",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:05:15Z",
+          "created": "2025-11-18T04:18:00Z",
           "created_by": "ENV HTTPD_PATCHES=",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:07:19Z",
+          "created": "2025-11-18T04:19:53Z",
           "created_by": "RUN /bin/sh -c set -eux; \t\tsavedAptMark=\"$(apt-mark showmanual)\"; \tapt-get install --update -y --no-install-recommends \t\tbzip2 \t\tdpkg-dev \t\tgcc \t\tgnupg \t\tlibapr1-dev \t\tlibaprutil1-dev \t\tlibbrotli-dev \t\tlibcurl4-openssl-dev \t\tlibjansson-dev \t\tliblua5.2-dev \t\tlibnghttp2-dev \t\tlibpcre2-dev \t\tlibssl-dev \t\tlibxml2-dev \t\tmake \t\tpatch \t\twget \t\tzlib1g-dev \t; \t\tddist() { \t\tlocal f=\"$1\"; shift; \t\tlocal distFile=\"$1\"; shift; \t\tlocal success=; \t\tlocal distUrl=; \t\tfor distUrl in \t\t\thttps://dlcdn.apache.org/ \t\t\thttps://archive.apache.org/dist/ \t\t; do \t\t\tif wget -O \"$f\" \"$distUrl$distFile\" \u0026\u0026 [ -s \"$f\" ]; then \t\t\t\tsuccess=1; \t\t\t\tbreak; \t\t\tfi; \t\tdone; \t\t[ -n \"$success\" ]; \t}; \t\tddist 'httpd.tar.bz2' \"httpd/httpd-$HTTPD_VERSION.tar.bz2\"; \techo \"$HTTPD_SHA256 *httpd.tar.bz2\" | sha256sum -c -; \t\tddist 'httpd.tar.bz2.asc' \"httpd/httpd-$HTTPD_VERSION.tar.bz2.asc\"; \texport GNUPGHOME=\"$(mktemp -d)\"; \tfor key in \t\tDE29FB3971E71543FD2DC049508EAEC5302DA568 \t\t13155B0E9E634F42BF6C163FDDBA64BA2C312D2F \t\t8B39757B1D8A994DF2433ED58B3A601F08C975E5 \t\t31EE1A81B8D066548156D37B7D6DBFD1F08E012A \t\tA10208FEC3152DD7C0C9B59B361522D782AB7BD1 \t\t3DE024AFDA7A4B15CB6C14410F81AA8AB0D5F771 \t\tEB138C6AF0FC691001B16D93344A844D751D7F27 \t\tCBA5A7C21EC143314C41393E5B968010E04F9A89 \t\t3C016F2B764621BB549C66B516A96495E2226795 \t\t937FB3994A242BA9BF49E93021454AF0CC8B0F7E \t\tEAD1359A4C0F2D37472AAF28F55DF0293A4E7AC9 \t\t4C1EADADB4EF5007579C919C6635B6C0DE885DD3 \t\t01E475360FCCF1D0F24B9D145D414AE1E005C9CB \t\t92CCEF0AA7DD46AC3A0F498BCA6939748103A37E \t\tD395C7573A68B9796D38C258153FA0CD75A67692 \t\tFA39B617B61493FD283503E7EED1EA392261D073 \t\t984FB3350C1D5C7A3282255BB31B213D208F5064 \t\tFE7A49DAA875E890B4167F76CCB2EB46E76CF6D0 \t\t39F6691A0ECF0C50E8BB849CF78875F642721F00 \t\t29A2BA848177B73878277FA475CAA2A3F39B3750 \t\t120A8667241AEDD4A78B46104C042818311A3DE5 \t\t453510BDA6C5855624E009236D0BC73A40581837 \t\t0DE5C55C6BF3B2352DABB89E13249B4FEC88A0BF \t\t7CDBED100806552182F98844E8E7E00B4DAA1988 \t\tA8BA9617EF3BCCAC3B29B869EDB105896F9522D8 \t\t3E6AC004854F3A7F03566B592FF06894E55B0D0E \t\t5B5181C2C0AB13E59DA3F7A3EC582EB639FF092C \t\tA93D62ECC3C8EA12DB220EC934EA76E6791485A8 \t\t65B2D44FE74BD5E3DE3AC3F082781DE46D5954FA \t\t8935926745E1CE7E3ED748F6EC99EE267EB5F61A \t\tE3480043595621FE56105F112AB12A7ADC55C003 \t\t93525CFCF6FDFFB3FD9700DD5A4B10AE43B56A27 \t\tC55AB7B9139EB2263CD1AABC19B033D1760C227B \t\t26F51EF9A82F4ACB43F1903ED377C9E7D1944C66 \t; do \t\tgpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\"; \tdone; \tgpg --batch --verify httpd.tar.bz2.asc httpd.tar.bz2; \tgpgconf --kill all; \trm -rf \"$GNUPGHOME\" httpd.tar.bz2.asc; \t\tmkdir -p src; \ttar -xf httpd.tar.bz2 -C src --strip-components=1; \trm httpd.tar.bz2; \tcd src; \t\tpatches() { \t\twhile [ \"$#\" -gt 0 ]; do \t\t\tlocal patchFile=\"$1\"; shift; \t\t\tlocal patchSha256=\"$1\"; shift; \t\t\tddist \"$patchFile\" \"httpd/patches/apply_to_$HTTPD_VERSION/$patchFile\"; \t\t\techo \"$patchSha256 *$patchFile\" | sha256sum -c -; \t\t\tpatch -p0 \u003c \"$patchFile\"; \t\t\trm -f \"$patchFile\"; \t\tdone; \t}; \tpatches $HTTPD_PATCHES; \t\tgnuArch=\"$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)\"; \tCFLAGS=\"$(dpkg-buildflags --get CFLAGS)\"; \tCPPFLAGS=\"$(dpkg-buildflags --get CPPFLAGS)\"; \tLDFLAGS=\"$(dpkg-buildflags --get LDFLAGS)\"; \t./configure \t\t--build=\"$gnuArch\" \t\t--prefix=\"$HTTPD_PREFIX\" \t\t--enable-mods-shared=reallyall \t\t--enable-mpms-shared=all \t\t--enable-pie \t\tCFLAGS=\"-pipe $CFLAGS\" \t\tCPPFLAGS=\"$CPPFLAGS\" \t\tLDFLAGS=\"-Wl,--as-needed $LDFLAGS\" \t; \tmake -j \"$(nproc)\"; \tmake install; \t\tcd ..; \trm -r src man manual; \t\tsed -ri \t\t-e 's!^(\\s*CustomLog)\\s+\\S+!\\1 /proc/self/fd/1!g' \t\t-e 's!^(\\s*ErrorLog)\\s+\\S+!\\1 /proc/self/fd/2!g' \t\t-e 's!^(\\s*TransferLog)\\s+\\S+!\\1 /proc/self/fd/1!g' \t\t-e 's!^(\\s*User)\\s+daemon\\s*$!\\1 www-data!g' \t\t-e 's!^(\\s*Group)\\s+daemon\\s*$!\\1 www-data!g' \t\t\"$HTTPD_PREFIX/conf/httpd.conf\" \t\t\"$HTTPD_PREFIX/conf/extra/httpd-ssl.conf\" \t; \tgrep -E '^\\s*User www-data$' \"$HTTPD_PREFIX/conf/httpd.conf\"; \tgrep -E '^\\s*Group www-data$' \"$HTTPD_PREFIX/conf/httpd.conf\"; \t\tapt-mark auto '.*' \u003e /dev/null; \t[ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; \tfind /usr/local -type f -executable -exec ldd '{}' ';' \t\t| awk '/=\u003e/ { so = $(NF-1); if (index(so, \"/usr/local/\") == 1) { next }; gsub(\"^/(usr/)?\", \"\", so); printf \"*%s\\n\", so }' \t\t| sort -u \t\t| xargs -r dpkg-query --search \t\t| cut -d: -f1 \t\t| sort -u \t\t| xargs -r apt-mark manual \t; \tapt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \tapt-get dist-clean; \t\thttpd -v # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-04T04:07:19Z",
+          "created": "2025-11-18T04:19:53Z",
           "created_by": "STOPSIGNAL SIGWINCH",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:07:19Z",
+          "created": "2025-11-18T04:19:53Z",
           "created_by": "COPY httpd-foreground /usr/local/bin/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-04T04:07:19Z",
+          "created": "2025-11-18T04:19:53Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-04T04:07:19Z",
+          "created": "2025-11-18T04:19:53Z",
           "created_by": "CMD [\"httpd-foreground\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-18T06:33:43Z",
+          "created": "2025-11-19T06:33:51Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-18T06:33:43Z",
+          "created": "2025-11-19T06:33:51Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-18T06:33:43Z",
+          "created": "2025-11-19T06:33:51Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-18T06:33:43Z",
+          "created": "2025-11-19T06:33:51Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -132,14 +132,14 @@
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4",
-          "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b",
+          "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb",
+          "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad",
           "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
-          "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836",
-          "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700",
-          "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330",
-          "sha256:89ab519bbeca875ddb0ca183e6a672968470593b738a33921fb50407373c65a6",
-          "sha256:fdd30bab909b84f7971fe6b9d832a03b7a348478e3e881c2716ad6651bf17a70"
+          "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
+          "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
+          "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
+          "sha256:802f99ba2ca96ebc9f0d0d8976d4f8f449ae743cf712fdaeebfa6879e785c228",
+          "sha256:b101c3141a6c2a989c8cb9d861b0f2617cae4b42c00c710aa0e07ae6a726e213"
         ]
       },
       "config": {
@@ -166,41 +166,41 @@
     "Layers": [
       {
         "Size": 81039360,
-        "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+        "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:fecb258af9fe31af74c0197c67adbcc3e3243af1d8ec7b1a0d9a42a746dba31b"
+        "DiffID": "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad"
       },
       {
         "Size": 1024,
         "DiffID": "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       },
       {
-        "Size": 6018048,
-        "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+        "Size": 6019584,
+        "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
       },
       {
         "Size": 33082880,
-        "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+        "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
       },
       {
         "Size": 3584,
-        "DiffID": "sha256:846dc7d28355abfe62216c2c460c39c8b34a86963c1191d6db8c2c10823fb330"
+        "DiffID": "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f"
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:89ab519bbeca875ddb0ca183e6a672968470593b738a33921fb50407373c65a6"
+        "DiffID": "sha256:802f99ba2ca96ebc9f0d0d8976d4f8f449ae743cf712fdaeebfa6879e785c228"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:fdd30bab909b84f7971fe6b9d832a03b7a348478e3e881c2716ad6651bf17a70"
+        "DiffID": "sha256:b101c3141a6c2a989c8cb9d861b0f2617cae4b42c00c710aa0e07ae6a726e213"
       }
     ]
   },
   "Results": [
     {
-      "Target": "web-loader (debian 13.1)",
+      "Target": "web-loader (debian 13.2)",
       "Class": "os-pkgs",
       "Type": "debian",
       "Packages": [
@@ -208,7 +208,7 @@
           "ID": "adduser@3.152",
           "Name": "adduser",
           "Identifier": {
-            "PURL": "pkg:deb/debian/adduser@3.152?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/adduser@3.152?arch=all\u0026distro=debian-13.2",
             "UID": "a26e3466c18314ad"
           },
           "Version": "3.152",
@@ -224,7 +224,7 @@
             "passwd@1:4.17.4-2"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/sbin/adduser",
@@ -290,8 +290,8 @@
           "ID": "apt@3.0.3",
           "Name": "apt",
           "Identifier": {
-            "PURL": "pkg:deb/debian/apt@3.0.3?arch=amd64\u0026distro=debian-13.1",
-            "UID": "26cbc052ac267c2"
+            "PURL": "pkg:deb/debian/apt@3.0.3?arch=amd64\u0026distro=debian-13.2",
+            "UID": "6642a59b2f9859f6"
           },
           "Version": "3.0.3",
           "Arch": "amd64",
@@ -313,13 +313,13 @@
             "libc6@2.41-12",
             "libgcc-s1@14.2.0-19",
             "libseccomp2@2.6.0-2",
-            "libssl3t64@3.5.1-1+deb13u1",
+            "libssl3t64@3.5.4-1~deb13u1",
             "libstdc++6@14.2.0-19",
-            "libsystemd0@257.8-1~deb13u2",
+            "libsystemd0@257.9-1~deb13u1",
             "sqv@1.3.0-3"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/apt",
@@ -506,23 +506,23 @@
           ]
         },
         {
-          "ID": "base-files@13.8+deb13u1",
+          "ID": "base-files@13.8+deb13u2",
           "Name": "base-files",
           "Identifier": {
-            "PURL": "pkg:deb/debian/base-files@13.8%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "f2c993d1e1f97238"
+            "PURL": "pkg:deb/debian/base-files@13.8%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "361ae6696fe84a0d"
           },
-          "Version": "13.8+deb13u1",
+          "Version": "13.8+deb13u2",
           "Arch": "amd64",
           "SrcName": "base-files",
-          "SrcVersion": "13.8+deb13u1",
+          "SrcVersion": "13.8+deb13u2",
           "Licenses": [
             "GPL-2.0-or-later",
             "verbatim"
           ],
           "Maintainer": "Santiago Vila \u003csanvila@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/os-release",
@@ -560,7 +560,7 @@
           "ID": "base-passwd@3.6.7",
           "Name": "base-passwd",
           "Identifier": {
-            "PURL": "pkg:deb/debian/base-passwd@3.6.7?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/base-passwd@3.6.7?arch=amd64\u0026distro=debian-13.2",
             "UID": "e32fda680625d96d"
           },
           "Version": "3.6.7",
@@ -578,7 +578,7 @@
             "libselinux1@3.8.1-1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/sbin/update-passwd",
@@ -605,8 +605,8 @@
           "ID": "bash@5.2.37-2+b5",
           "Name": "bash",
           "Identifier": {
-            "PURL": "pkg:deb/debian/bash@5.2.37-2%2Bb5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "235aa9088a703d3c"
+            "PURL": "pkg:deb/debian/bash@5.2.37-2%2Bb5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "45cfeabe81518977"
           },
           "Version": "5.2.37",
           "Release": "2+b5",
@@ -629,11 +629,11 @@
           ],
           "Maintainer": "Matthias Klose \u003cdoko@debian.org\u003e",
           "DependsOn": [
-            "base-files@13.8+deb13u1",
+            "base-files@13.8+deb13u2",
             "debianutils@5.23.2"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/bash",
@@ -707,7 +707,7 @@
           "ID": "bsdutils@1:2.41-5",
           "Name": "bsdutils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "c9de60be80a96a27"
           },
           "Version": "2.41",
@@ -738,7 +738,7 @@
           ],
           "Maintainer": "Chris Hofstaedtler \u003czeha@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/logger",
@@ -770,8 +770,8 @@
           "ID": "ca-certificates@20250419",
           "Name": "ca-certificates",
           "Identifier": {
-            "PURL": "pkg:deb/debian/ca-certificates@20250419?arch=all\u0026distro=debian-13.1",
-            "UID": "bcbbfb6dcdbd65a7"
+            "PURL": "pkg:deb/debian/ca-certificates@20250419?arch=all\u0026distro=debian-13.2",
+            "UID": "99473214bfaddad8"
           },
           "Version": "20250419",
           "Arch": "all",
@@ -785,10 +785,10 @@
           "Maintainer": "Julien Cristau \u003cjcristau@debian.org\u003e",
           "DependsOn": [
             "debconf@1.5.91",
-            "openssl@3.5.1-1+deb13u1"
+            "openssl@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/sbin/update-ca-certificates",
@@ -964,7 +964,7 @@
           "ID": "coreutils@9.7-3",
           "Name": "coreutils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "a90cbdbcbab1768e"
           },
           "Version": "9.7",
@@ -984,7 +984,7 @@
           ],
           "Maintainer": "Michael Stone \u003cmstone@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/[",
@@ -1259,7 +1259,7 @@
           "ID": "dash@0.5.12-12",
           "Name": "dash",
           "Identifier": {
-            "PURL": "pkg:deb/debian/dash@0.5.12-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/dash@0.5.12-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "89c835b0985cdc5c"
           },
           "Version": "0.5.12",
@@ -1279,7 +1279,7 @@
             "debianutils@5.23.2"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/dash",
@@ -1298,7 +1298,7 @@
           "ID": "debconf@1.5.91",
           "Name": "debconf",
           "Identifier": {
-            "PURL": "pkg:deb/debian/debconf@1.5.91?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/debconf@1.5.91?arch=all\u0026distro=debian-13.2",
             "UID": "dbd74d1c32616a65"
           },
           "Version": "1.5.91",
@@ -1310,7 +1310,7 @@
           ],
           "Maintainer": "Debconf Developers \u003cdebconf-devel@lists.alioth.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/debconf",
@@ -1450,7 +1450,7 @@
           "ID": "debian-archive-keyring@2025.1",
           "Name": "debian-archive-keyring",
           "Identifier": {
-            "PURL": "pkg:deb/debian/debian-archive-keyring@2025.1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/debian-archive-keyring@2025.1?arch=all\u0026distro=debian-13.2",
             "UID": "3d23f3bc34b84a13"
           },
           "Version": "2025.1",
@@ -1462,7 +1462,7 @@
           ],
           "Maintainer": "Debian Release Team \u003cpackages@release.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/debian-archive-keyring/NEWS.Debian.gz",
@@ -1486,7 +1486,7 @@
           "ID": "debianutils@5.23.2",
           "Name": "debianutils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/debianutils@5.23.2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/debianutils@5.23.2?arch=amd64\u0026distro=debian-13.2",
             "UID": "1faaee83f4beb2af"
           },
           "Version": "5.23.2",
@@ -1501,7 +1501,7 @@
           ],
           "Maintainer": "Ileana Dumitrescu \u003cileanadumitrescu95@gmail.com\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/ischroot",
@@ -1580,7 +1580,7 @@
           "ID": "diffutils@1:3.10-4",
           "Name": "diffutils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/diffutils@3.10-4?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/diffutils@3.10-4?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "6ae1b70a720e3ebb"
           },
           "Version": "3.10",
@@ -1613,7 +1613,7 @@
           ],
           "Maintainer": "Santiago Vila \u003csanvila@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/cmp",
@@ -1671,7 +1671,7 @@
           "ID": "dpkg@1.22.21",
           "Name": "dpkg",
           "Identifier": {
-            "PURL": "pkg:deb/debian/dpkg@1.22.21?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/dpkg@1.22.21?arch=amd64\u0026distro=debian-13.2",
             "UID": "cc27f3afd091dba3"
           },
           "Version": "1.22.21",
@@ -1688,7 +1688,7 @@
             "tar@1.35+dfsg-3.1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/dpkg",
@@ -1842,7 +1842,7 @@
           "ID": "findutils@4.10.0-3",
           "Name": "findutils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/findutils@4.10.0-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/findutils@4.10.0-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "111949a4800741f1"
           },
           "Version": "4.10.0",
@@ -1877,7 +1877,7 @@
           ],
           "Maintainer": "Andreas Metzler \u003cametzler@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/find",
@@ -1939,7 +1939,7 @@
           "ID": "gcc-14-base@14.2.0-19",
           "Name": "gcc-14-base",
           "Identifier": {
-            "PURL": "pkg:deb/debian/gcc-14-base@14.2.0-19?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/gcc-14-base@14.2.0-19?arch=amd64\u0026distro=debian-13.2",
             "UID": "a2d64c6b5f038075"
           },
           "Version": "14.2.0",
@@ -1957,7 +1957,7 @@
           ],
           "Maintainer": "Debian GCC Maintainers \u003cdebian-gcc@lists.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/gcc-14-base/README.Debian.amd64.gz",
@@ -1970,7 +1970,7 @@
           "ID": "grep@3.11-4",
           "Name": "grep",
           "Identifier": {
-            "PURL": "pkg:deb/debian/grep@3.11-4?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/grep@3.11-4?arch=amd64\u0026distro=debian-13.2",
             "UID": "d450e0ea7fae458f"
           },
           "Version": "3.11",
@@ -1985,7 +1985,7 @@
           ],
           "Maintainer": "Anibal Monsalve Salazar \u003canibal@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/egrep",
@@ -2054,7 +2054,7 @@
           "ID": "gzip@1.13-1",
           "Name": "gzip",
           "Identifier": {
-            "PURL": "pkg:deb/debian/gzip@1.13-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/gzip@1.13-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "60254b2bea6a1f09"
           },
           "Version": "1.13",
@@ -2072,7 +2072,7 @@
           ],
           "Maintainer": "Milan Kupcevic \u003cmilan@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/gunzip",
@@ -2109,7 +2109,7 @@
           "ID": "hostname@3.25",
           "Name": "hostname",
           "Identifier": {
-            "PURL": "pkg:deb/debian/hostname@3.25?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/hostname@3.25?arch=amd64\u0026distro=debian-13.2",
             "UID": "87ef62957d44b2c"
           },
           "Version": "3.25",
@@ -2121,7 +2121,7 @@
           ],
           "Maintainer": "Michael Meskes \u003cmeskes@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/hostname",
@@ -2134,7 +2134,7 @@
           "ID": "init-system-helpers@1.69~deb13u1",
           "Name": "init-system-helpers",
           "Identifier": {
-            "PURL": "pkg:deb/debian/init-system-helpers@1.69~deb13u1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/init-system-helpers@1.69~deb13u1?arch=all\u0026distro=debian-13.2",
             "UID": "317be9d9c6744acd"
           },
           "Version": "1.69~deb13u1",
@@ -2148,7 +2148,7 @@
           ],
           "Maintainer": "Debian systemd Maintainers \u003cpkg-systemd-maintainers@lists.alioth.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/deb-systemd-helper",
@@ -2173,7 +2173,7 @@
           "ID": "libacl1@2.3.2-2+b1",
           "Name": "libacl1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libacl1@2.3.2-2%2Bb1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libacl1@2.3.2-2%2Bb1?arch=amd64\u0026distro=debian-13.2",
             "UID": "c595e244e31bea2f"
           },
           "Version": "2.3.2",
@@ -2193,7 +2193,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libacl.so.1.1.2302",
@@ -2208,7 +2208,7 @@
           "ID": "libapr1t64@1.7.5-1",
           "Name": "libapr1t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libapr1t64@1.7.5-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libapr1t64@1.7.5-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "d49979f407546d87"
           },
           "Version": "1.7.5",
@@ -2226,7 +2226,7 @@
             "libuuid1@2.41-5"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libapr-1.so.0.7.5",
@@ -2241,7 +2241,7 @@
           "ID": "libaprutil1-ldap@1.6.3-3+b1",
           "Name": "libaprutil1-ldap",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libaprutil1-ldap@1.6.3-3%2Bb1?arch=amd64\u0026distro=debian-13.2",
             "UID": "92aa3d116a4c5130"
           },
           "Version": "1.6.3",
@@ -2260,7 +2260,7 @@
             "libldap2@2.6.10+dfsg-1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/apr-util-1/apr_ldap-1.so",
@@ -2275,8 +2275,8 @@
           "ID": "libaprutil1t64@1.6.3-3+b1",
           "Name": "libaprutil1t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "d2ffd0ae30a5fec4"
+            "PURL": "pkg:deb/debian/libaprutil1t64@1.6.3-3%2Bb1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "4e5061437fc638ad"
           },
           "Version": "1.6.3",
           "Release": "3+b1",
@@ -2295,10 +2295,10 @@
             "libdb5.3t64@5.3.28+dfsg2-9",
             "libexpat1@2.7.1-2",
             "libgdbm6t64@1.24-2",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/apr-util-1/apr_crypto_openssl-1.so",
@@ -2317,8 +2317,8 @@
           "ID": "libapt-pkg7.0@3.0.3",
           "Name": "libapt-pkg7.0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libapt-pkg7.0@3.0.3?arch=amd64\u0026distro=debian-13.1",
-            "UID": "80dd2636db3e0564"
+            "PURL": "pkg:deb/debian/libapt-pkg7.0@3.0.3?arch=amd64\u0026distro=debian-13.2",
+            "UID": "a42f664fd0cab715"
           },
           "Version": "3.0.3",
           "Arch": "amd64",
@@ -2338,16 +2338,16 @@
             "libgcc-s1@14.2.0-19",
             "liblz4-1@1.10.0-4",
             "liblzma5@5.8.1-1",
-            "libssl3t64@3.5.1-1+deb13u1",
+            "libssl3t64@3.5.4-1~deb13u1",
             "libstdc++6@14.2.0-19",
-            "libsystemd0@257.8-1~deb13u2",
-            "libudev1@257.8-1~deb13u2",
+            "libsystemd0@257.9-1~deb13u1",
+            "libudev1@257.9-1~deb13u1",
             "libxxhash0@0.8.3-2",
             "libzstd1@1.5.7+dfsg-1",
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libapt-pkg.so.7.0.0",
@@ -2403,7 +2403,7 @@
           "ID": "libattr1@1:2.5.2-3",
           "Name": "libattr1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libattr1@2.5.2-3?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/libattr1@2.5.2-3?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "6e85fd1e20e432a1"
           },
           "Version": "2.5.2",
@@ -2425,7 +2425,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libattr.so.1.1.2502",
@@ -2439,7 +2439,7 @@
           "ID": "libaudit-common@1:4.0.2-2",
           "Name": "libaudit-common",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libaudit-common@4.0.2-2?arch=all\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/libaudit-common@4.0.2-2?arch=all\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "4845289e49197cbd"
           },
           "Version": "4.0.2",
@@ -2457,7 +2457,7 @@
           ],
           "Maintainer": "Laurent Bigonville \u003cbigon@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/libaudit-common/changelog.Debian.gz",
@@ -2470,7 +2470,7 @@
           "ID": "libaudit1@1:4.0.2-2+b2",
           "Name": "libaudit1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libaudit1@4.0.2-2%2Bb2?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/libaudit1@4.0.2-2%2Bb2?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "60f29d52a96eceff"
           },
           "Version": "4.0.2",
@@ -2493,7 +2493,7 @@
             "libcap-ng0@0.8.5-4+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libaudit.so.1.0.0",
@@ -2507,7 +2507,7 @@
           "ID": "libblkid1@2.41-5",
           "Name": "libblkid1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "6c9693ac78293e63"
           },
           "Version": "2.41",
@@ -2540,7 +2540,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libblkid.so.1.1.0",
@@ -2555,7 +2555,7 @@
           "ID": "libbrotli1@1.1.0-2+b7",
           "Name": "libbrotli1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libbrotli1@1.1.0-2%2Bb7?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libbrotli1@1.1.0-2%2Bb7?arch=amd64\u0026distro=debian-13.2",
             "UID": "83a47ba58346a303"
           },
           "Version": "1.1.0",
@@ -2572,7 +2572,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.1.0",
@@ -2589,7 +2589,7 @@
           "ID": "libbsd0@0.12.2-2",
           "Name": "libbsd0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libbsd0@0.12.2-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libbsd0@0.12.2-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "b5c78e91ff2e46a4"
           },
           "Version": "0.12.2",
@@ -2620,7 +2620,7 @@
             "libmd0@1.1.0-2+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libbsd.so.0.12.2",
@@ -2634,7 +2634,7 @@
           "ID": "libbz2-1.0@1.0.8-6",
           "Name": "libbz2-1.0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libbz2-1.0@1.0.8-6?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libbz2-1.0@1.0.8-6?arch=amd64\u0026distro=debian-13.2",
             "UID": "6fdb2eb525b1d46"
           },
           "Version": "1.0.8",
@@ -2652,7 +2652,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libbz2.so.1.0.4",
@@ -2665,7 +2665,7 @@
           "ID": "libc-bin@2.41-12",
           "Name": "libc-bin",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "Version": "2.41",
@@ -2713,7 +2713,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/getconf",
@@ -2753,7 +2753,7 @@
           "ID": "libc6@2.41-12",
           "Name": "libc6",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "Version": "2.41",
@@ -2801,7 +2801,7 @@
             "libgcc-s1@14.2.0-19"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/gconv/ANSI_X3.110.so",
@@ -3094,7 +3094,7 @@
           "ID": "libcap-ng0@0.8.5-4+b1",
           "Name": "libcap-ng0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libcap-ng0@0.8.5-4%2Bb1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libcap-ng0@0.8.5-4%2Bb1?arch=amd64\u0026distro=debian-13.2",
             "UID": "ca9cbd06f9ca5e4"
           },
           "Version": "0.8.5",
@@ -3115,7 +3115,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libcap-ng.so.0.0.0",
@@ -3130,7 +3130,7 @@
           "ID": "libcap2@1:2.75-10+b1",
           "Name": "libcap2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libcap2@2.75-10%2Bb1?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/libcap2@2.75-10%2Bb1?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "53ebb813a3a7b3ac"
           },
           "Version": "2.75",
@@ -3151,7 +3151,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libcap.so.2.75",
@@ -3166,7 +3166,7 @@
           "ID": "libcom-err2@1.47.2-3+b3",
           "Name": "libcom-err2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libcom-err2@1.47.2-3%2Bb3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libcom-err2@1.47.2-3%2Bb3?arch=amd64\u0026distro=debian-13.2",
             "UID": "7170974bb2239ef5"
           },
           "Version": "1.47.2",
@@ -3196,7 +3196,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libcom_err.so.2.1",
@@ -3209,7 +3209,7 @@
           "ID": "libcrypt1@1:4.4.38-1",
           "Name": "libcrypt1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libcrypt1@4.4.38-1?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/libcrypt1@4.4.38-1?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "fca8f76663a33f72"
           },
           "Version": "4.4.38",
@@ -3225,7 +3225,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libcrypt.so.1.1.0",
@@ -3235,18 +3235,18 @@
           ]
         },
         {
-          "ID": "libcurl4t64@8.14.1-2",
+          "ID": "libcurl4t64@8.14.1-2+deb13u2",
           "Name": "libcurl4t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "3e2ea19da6a06f1d"
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "94dff8529c4b3663"
           },
           "Version": "8.14.1",
-          "Release": "2",
+          "Release": "2+deb13u2",
           "Arch": "amd64",
           "SrcName": "curl",
           "SrcVersion": "8.14.1",
-          "SrcRelease": "2",
+          "SrcRelease": "2+deb13u2",
           "Licenses": [
             "curl",
             "OLDAP-2.8",
@@ -3272,12 +3272,12 @@
             "libpsl5t64@0.21.2-1.1+b1",
             "librtmp1@2.4+20151223.gitfa8646d.1-2+b5",
             "libssh2-1t64@1.11.1-1",
-            "libssl3t64@3.5.1-1+deb13u1",
+            "libssl3t64@3.5.4-1~deb13u1",
             "libzstd1@1.5.7+dfsg-1",
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libcurl.so.4.8.0",
@@ -3290,7 +3290,7 @@
           "ID": "libdb5.3t64@5.3.28+dfsg2-9",
           "Name": "libdb5.3t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libdb5.3t64@5.3.28%2Bdfsg2-9?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libdb5.3t64@5.3.28%2Bdfsg2-9?arch=amd64\u0026distro=debian-13.2",
             "UID": "53e4de325e6240d4"
           },
           "Version": "5.3.28+dfsg2",
@@ -3317,7 +3317,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libdb-5.3.so",
@@ -3331,7 +3331,7 @@
           "ID": "libdebconfclient0@0.280",
           "Name": "libdebconfclient0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libdebconfclient0@0.280?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libdebconfclient0@0.280?arch=amd64\u0026distro=debian-13.2",
             "UID": "8723053ef24d112e"
           },
           "Version": "0.280",
@@ -3348,7 +3348,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libdebconfclient.so.0.0.0",
@@ -3360,7 +3360,7 @@
           "ID": "libexpat1@2.7.1-2",
           "Name": "libexpat1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "c2e467a61b1e160e"
           },
           "Version": "2.7.1",
@@ -3374,7 +3374,7 @@
           ],
           "Maintainer": "Laszlo Boszormenyi (GCS) \u003cgcs@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libexpat.so.1.10.2",
@@ -3389,7 +3389,7 @@
           "ID": "libffi8@3.4.8-2",
           "Name": "libffi8",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libffi8@3.4.8-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libffi8@3.4.8-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "7b83303cb78b1833"
           },
           "Version": "3.4.8",
@@ -3412,7 +3412,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libffi.so.8.1.4",
@@ -3424,7 +3424,7 @@
           "ID": "libgcc-s1@14.2.0-19",
           "Name": "libgcc-s1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libgcc-s1@14.2.0-19?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgcc-s1@14.2.0-19?arch=amd64\u0026distro=debian-13.2",
             "UID": "813860d4d33b76b5"
           },
           "Version": "14.2.0",
@@ -3439,7 +3439,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1",
@@ -3450,7 +3450,7 @@
           "ID": "libgdbm6t64@1.24-2",
           "Name": "libgdbm6t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libgdbm6t64@1.24-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgdbm6t64@1.24-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "b99a39628feda90"
           },
           "Version": "1.24",
@@ -3471,7 +3471,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgdbm.so.6.0.0",
@@ -3485,7 +3485,7 @@
           "ID": "libgmp10@2:6.3.0+dfsg-3",
           "Name": "libgmp10",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libgmp10@6.3.0%2Bdfsg-3?arch=amd64\u0026distro=debian-13.1\u0026epoch=2",
+            "PURL": "pkg:deb/debian/libgmp10@6.3.0%2Bdfsg-3?arch=amd64\u0026distro=debian-13.2\u0026epoch=2",
             "UID": "8f6394e4bf34bc90"
           },
           "Version": "6.3.0+dfsg",
@@ -3510,7 +3510,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgmp.so.10.5.0",
@@ -3524,7 +3524,7 @@
           "ID": "libgnutls30t64@3.8.9-3",
           "Name": "libgnutls30t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "ff33dbe4723118d9"
           },
           "Version": "3.8.9",
@@ -3561,7 +3561,7 @@
             "libunistring5@1.3-2"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgnutls.so.30.40.3",
@@ -3597,7 +3597,7 @@
           "ID": "libgssapi-krb5-2@1.21.3-5",
           "Name": "libgssapi-krb5-2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e981ef95af866663"
           },
           "Version": "1.21.3",
@@ -3618,7 +3618,7 @@
             "libkrb5support0@1.21.3-5"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so.2.2",
@@ -3631,7 +3631,7 @@
           "ID": "libhogweed6t64@3.10.1-1",
           "Name": "libhogweed6t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libhogweed6t64@3.10.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libhogweed6t64@3.10.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "93d12a6ea6e63e7b"
           },
           "Version": "3.10.1",
@@ -3658,7 +3658,7 @@
             "libnettle8t64@3.10.1-1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libhogweed.so.6.10",
@@ -3672,7 +3672,7 @@
           "ID": "libidn2-0@2.3.8-2",
           "Name": "libidn2-0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libidn2-0@2.3.8-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libidn2-0@2.3.8-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "47a6bc21cc7f22ac"
           },
           "Version": "2.3.8",
@@ -3697,7 +3697,7 @@
             "libunistring5@1.3-2"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libidn2.so.0.4.0",
@@ -3739,7 +3739,7 @@
           "ID": "libjansson4@2.14-2+b3",
           "Name": "libjansson4",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libjansson4@2.14-2%2Bb3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libjansson4@2.14-2%2Bb3?arch=amd64\u0026distro=debian-13.2",
             "UID": "f2f7542d83d235f"
           },
           "Version": "2.14",
@@ -3756,7 +3756,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libjansson.so.4.14.0",
@@ -3772,7 +3772,7 @@
           "ID": "libk5crypto3@1.21.3-5",
           "Name": "libk5crypto3",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "654244e38d239af9"
           },
           "Version": "1.21.3",
@@ -3790,7 +3790,7 @@
             "libkrb5support0@1.21.3-5"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libk5crypto.so.3.1",
@@ -3802,7 +3802,7 @@
           "ID": "libkeyutils1@1.6.3-6",
           "Name": "libkeyutils1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libkeyutils1@1.6.3-6?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libkeyutils1@1.6.3-6?arch=amd64\u0026distro=debian-13.2",
             "UID": "f0a9f8df0ae9e579"
           },
           "Version": "1.6.3",
@@ -3822,7 +3822,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libkeyutils.so.1.10",
@@ -3834,8 +3834,8 @@
           "ID": "libkrb5-3@1.21.3-5",
           "Name": "libkrb5-3",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "42eb2a7522db520b"
+            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "198ff5a921cdf154"
           },
           "Version": "1.21.3",
           "Release": "5",
@@ -3853,10 +3853,10 @@
             "libk5crypto3@1.21.3-5",
             "libkeyutils1@1.6.3-6",
             "libkrb5support0@1.21.3-5",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/krb5/plugins/preauth/spake.so",
@@ -3872,7 +3872,7 @@
           "ID": "libkrb5support0@1.21.3-5",
           "Name": "libkrb5support0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7b7b2ceb7abdb0a3"
           },
           "Version": "1.21.3",
@@ -3889,7 +3889,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libkrb5support.so.0.1",
@@ -3902,7 +3902,7 @@
           "ID": "liblastlog2-2@2.41-5",
           "Name": "liblastlog2-2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "df76396cbfd04981"
           },
           "Version": "2.41",
@@ -3936,7 +3936,7 @@
             "libsqlite3-0@3.46.1-7"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblastlog2.so.2.0.0",
@@ -3950,7 +3950,7 @@
           "ID": "libldap-common@2.6.10+dfsg-1",
           "Name": "libldap-common",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.2",
             "UID": "19017187844935cd"
           },
           "Version": "2.6.10+dfsg",
@@ -3987,7 +3987,7 @@
           ],
           "Maintainer": "Debian OpenLDAP Maintainers \u003cpkg-openldap-devel@lists.alioth.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/share/doc/libldap-common/NEWS.Debian.gz",
@@ -4001,8 +4001,8 @@
           "ID": "libldap2@2.6.10+dfsg-1",
           "Name": "libldap2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "4f4bae24df52de41"
+            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "e3bb10dd5d9ac596"
           },
           "Version": "2.6.10+dfsg",
           "Release": "1",
@@ -4040,10 +4040,10 @@
           "DependsOn": [
             "libc6@2.41-12",
             "libsasl2-2@2.1.28+dfsg1-9",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblber.so.2.0.200",
@@ -4058,7 +4058,7 @@
           "ID": "liblua5.2-0@5.2.4-3+b3",
           "Name": "liblua5.2-0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/liblua5.2-0@5.2.4-3%2Bb3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/liblua5.2-0@5.2.4-3%2Bb3?arch=amd64\u0026distro=debian-13.2",
             "UID": "c55a6a91b9134ec6"
           },
           "Version": "5.2.4",
@@ -4076,7 +4076,7 @@
             "libstdc++6@14.2.0-19"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblua5.2-c++.so.0.0.0",
@@ -4090,7 +4090,7 @@
           "ID": "liblz4-1@1.10.0-4",
           "Name": "liblz4-1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/liblz4-1@1.10.0-4?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/liblz4-1@1.10.0-4?arch=amd64\u0026distro=debian-13.2",
             "UID": "5be603ddb02c650f"
           },
           "Version": "1.10.0",
@@ -4110,7 +4110,7 @@
             "libxxhash0@0.8.3-2"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblz4.so.1.10.0",
@@ -4122,7 +4122,7 @@
           "ID": "liblzma5@5.8.1-1",
           "Name": "liblzma5",
           "Identifier": {
-            "PURL": "pkg:deb/debian/liblzma5@5.8.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/liblzma5@5.8.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "88e7a89cb6723d88"
           },
           "Version": "5.8.1",
@@ -4152,7 +4152,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/liblzma.so.5.8.1",
@@ -4168,7 +4168,7 @@
           "ID": "libmd0@1.1.0-2+b1",
           "Name": "libmd0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libmd0@1.1.0-2%2Bb1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libmd0@1.1.0-2%2Bb1?arch=amd64\u0026distro=debian-13.2",
             "UID": "23d60256b09c2ba7"
           },
           "Version": "1.1.0",
@@ -4193,7 +4193,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libmd.so.0.1.0",
@@ -4207,7 +4207,7 @@
           "ID": "libmount1@2.41-5",
           "Name": "libmount1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "6d2d7374cd54451e"
           },
           "Version": "2.41",
@@ -4242,7 +4242,7 @@
             "libselinux1@3.8.1-1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libmount.so.1.1.0",
@@ -4257,7 +4257,7 @@
           "ID": "libnettle8t64@3.10.1-1",
           "Name": "libnettle8t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libnettle8t64@3.10.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libnettle8t64@3.10.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "48343658214e46b4"
           },
           "Version": "3.10.1",
@@ -4282,7 +4282,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libnettle.so.8.10",
@@ -4298,7 +4298,7 @@
           "ID": "libnghttp2-14@1.64.0-1.1",
           "Name": "libnghttp2-14",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libnghttp2-14@1.64.0-1.1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libnghttp2-14@1.64.0-1.1?arch=amd64\u0026distro=debian-13.2",
             "UID": "f376b263487ca4e4"
           },
           "Version": "1.64.0",
@@ -4319,7 +4319,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libnghttp2.so.14.28.3",
@@ -4333,7 +4333,7 @@
           "ID": "libnghttp3-9@1.8.0-1",
           "Name": "libnghttp3-9",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libnghttp3-9@1.8.0-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libnghttp3-9@1.8.0-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "6121db78bc4981ea"
           },
           "Version": "1.8.0",
@@ -4359,7 +4359,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libnghttp3.so.9.2.6",
@@ -4372,7 +4372,7 @@
           "ID": "libp11-kit0@0.25.5-3",
           "Name": "libp11-kit0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libp11-kit0@0.25.5-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libp11-kit0@0.25.5-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "a86f7aa7673142c"
           },
           "Version": "0.25.5",
@@ -4401,7 +4401,7 @@
             "libffi8@3.4.8-2"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libp11-kit.so.0.4.1",
@@ -4415,7 +4415,7 @@
           "ID": "libpam-modules@1.7.0-5",
           "Name": "libpam-modules",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpam-modules@1.7.0-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libpam-modules@1.7.0-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "b9d6f9c66558c40d"
           },
           "Version": "1.7.0",
@@ -4439,7 +4439,7 @@
           ],
           "Maintainer": "Sam Hartman \u003chartmans@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/security/pam_access.so",
@@ -4499,8 +4499,8 @@
           "ID": "libpam-modules-bin@1.7.0-5",
           "Name": "libpam-modules-bin",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpam-modules-bin@1.7.0-5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "bb305b59765ff43e"
+            "PURL": "pkg:deb/debian/libpam-modules-bin@1.7.0-5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "9fa0f41fe4884e1b"
           },
           "Version": "1.7.0",
           "Release": "5",
@@ -4528,10 +4528,10 @@
             "libcrypt1@1:4.4.38-1",
             "libpam0g@1.7.0-5",
             "libselinux1@3.8.1-1",
-            "libsystemd0@257.8-1~deb13u2"
+            "libsystemd0@257.9-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/systemd/system/pam_namespace.service",
@@ -4552,7 +4552,7 @@
           "ID": "libpam-runtime@1.7.0-5",
           "Name": "libpam-runtime",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpam-runtime@1.7.0-5?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libpam-runtime@1.7.0-5?arch=all\u0026distro=debian-13.2",
             "UID": "2e8bd19930283d52"
           },
           "Version": "1.7.0",
@@ -4580,7 +4580,7 @@
             "libpam-modules@1.7.0-5"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/sbin/pam-auth-update",
@@ -4752,7 +4752,7 @@
           "ID": "libpam0g@1.7.0-5",
           "Name": "libpam0g",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpam0g@1.7.0-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libpam0g@1.7.0-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7c64fa0e3792081f"
           },
           "Version": "1.7.0",
@@ -4781,7 +4781,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libpam.so.0.85.1",
@@ -4801,7 +4801,7 @@
           "ID": "libpcre2-8-0@10.46-1~deb13u1",
           "Name": "libpcre2-8-0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpcre2-8-0@10.46-1~deb13u1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libpcre2-8-0@10.46-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
             "UID": "e711d6472730c634"
           },
           "Version": "10.46",
@@ -4822,7 +4822,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0.14.0",
@@ -4836,7 +4836,7 @@
           "ID": "libpsl5t64@0.21.2-1.1+b1",
           "Name": "libpsl5t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libpsl5t64@0.21.2-1.1%2Bb1?arch=amd64\u0026distro=debian-13.2",
             "UID": "d20843970880c215"
           },
           "Version": "0.21.2",
@@ -4857,7 +4857,7 @@
             "libunistring5@1.3-2"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libpsl.so.5.3.4",
@@ -4872,7 +4872,7 @@
           "ID": "librtmp1@2.4+20151223.gitfa8646d.1-2+b5",
           "Name": "librtmp1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/librtmp1@2.4%2B20151223.gitfa8646d.1-2%2Bb5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7514aec3addd68f5"
           },
           "Version": "2.4+20151223.gitfa8646d.1",
@@ -4895,7 +4895,7 @@
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/librtmp.so.1",
@@ -4909,8 +4909,8 @@
           "ID": "libsasl2-2@2.1.28+dfsg1-9",
           "Name": "libsasl2-2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9?arch=amd64\u0026distro=debian-13.1",
-            "UID": "860ee9885df44d23"
+            "PURL": "pkg:deb/debian/libsasl2-2@2.1.28%2Bdfsg1-9?arch=amd64\u0026distro=debian-13.2",
+            "UID": "7ce395a1c12dafe"
           },
           "Version": "2.1.28+dfsg1",
           "Release": "9",
@@ -4941,10 +4941,10 @@
           "DependsOn": [
             "libc6@2.41-12",
             "libsasl2-modules-db@2.1.28+dfsg1-9",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsasl2.so.2.0.25",
@@ -4958,7 +4958,7 @@
           "ID": "libsasl2-modules-db@2.1.28+dfsg1-9",
           "Name": "libsasl2-modules-db",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsasl2-modules-db@2.1.28%2Bdfsg1-9?arch=amd64\u0026distro=debian-13.2",
             "UID": "59d62230b1063ea"
           },
           "Version": "2.1.28+dfsg1",
@@ -4992,7 +4992,7 @@
             "libdb5.3t64@5.3.28+dfsg2-9"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/sasl2/libsasldb.so.2.0.25",
@@ -5004,7 +5004,7 @@
           "ID": "libseccomp2@2.6.0-2",
           "Name": "libseccomp2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libseccomp2@2.6.0-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libseccomp2@2.6.0-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "f6e9daa8e2a1900f"
           },
           "Version": "2.6.0",
@@ -5021,7 +5021,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libseccomp.so.2.6.0",
@@ -5034,7 +5034,7 @@
           "ID": "libselinux1@3.8.1-1",
           "Name": "libselinux1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libselinux1@3.8.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libselinux1@3.8.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6273b1762ccaef9"
           },
           "Version": "3.8.1",
@@ -5053,7 +5053,7 @@
             "libpcre2-8-0@10.46-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/tmpfiles.d/libselinux1.conf",
@@ -5066,7 +5066,7 @@
           "ID": "libsemanage-common@3.8.1-1",
           "Name": "libsemanage-common",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsemanage-common@3.8.1-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsemanage-common@3.8.1-1?arch=all\u0026distro=debian-13.2",
             "UID": "82e27fcff653c8e2"
           },
           "Version": "3.8.1",
@@ -5082,7 +5082,7 @@
           ],
           "Maintainer": "Debian SELinux maintainers \u003cselinux-devel@lists.alioth.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/libsemanage-common/changelog.Debian.gz",
@@ -5094,7 +5094,7 @@
           "ID": "libsemanage2@3.8.1-1",
           "Name": "libsemanage2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsemanage2@3.8.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsemanage2@3.8.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "a2f1e5a679948b47"
           },
           "Version": "3.8.1",
@@ -5118,7 +5118,7 @@
             "libsepol2@3.8.1-1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsemanage.so.2",
@@ -5130,7 +5130,7 @@
           "ID": "libsepol2@3.8.1-1",
           "Name": "libsepol2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsepol2@3.8.1-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsepol2@3.8.1-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "42060046fe7e6042"
           },
           "Version": "3.8.1",
@@ -5151,7 +5151,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsepol.so.2",
@@ -5163,7 +5163,7 @@
           "ID": "libsmartcols1@2.41-5",
           "Name": "libsmartcols1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "bdd963006efde917"
           },
           "Version": "2.41",
@@ -5196,7 +5196,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsmartcols.so.1.1.0",
@@ -5211,7 +5211,7 @@
           "ID": "libsqlite3-0@3.46.1-7",
           "Name": "libsqlite3-0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.2",
             "UID": "d3b12dcb7bd33f74"
           },
           "Version": "3.46.1",
@@ -5230,7 +5230,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6",
@@ -5245,8 +5245,8 @@
           "ID": "libssh2-1t64@1.11.1-1",
           "Name": "libssh2-1t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libssh2-1t64@1.11.1-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "9616552c195ea52b"
+            "PURL": "pkg:deb/debian/libssh2-1t64@1.11.1-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "69e50ac9515a6382"
           },
           "Version": "1.11.1",
           "Release": "1",
@@ -5261,11 +5261,11 @@
           "Maintainer": "Nicolas Mora \u003cbabelouest@debian.org\u003e",
           "DependsOn": [
             "libc6@2.41-12",
-            "libssl3t64@3.5.1-1+deb13u1",
+            "libssl3t64@3.5.4-1~deb13u1",
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libssh2.so.1.0.1",
@@ -5277,18 +5277,18 @@
           ]
         },
         {
-          "ID": "libssl3t64@3.5.1-1+deb13u1",
+          "ID": "libssl3t64@3.5.4-1~deb13u1",
           "Name": "libssl3t64",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libssl3t64@3.5.1-1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "21570f13e9c95536"
+            "PURL": "pkg:deb/debian/libssl3t64@3.5.4-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "c791ee9af1612c58"
           },
-          "Version": "3.5.1",
-          "Release": "1+deb13u1",
+          "Version": "3.5.4",
+          "Release": "1~deb13u1",
           "Arch": "amd64",
           "SrcName": "openssl",
-          "SrcVersion": "3.5.1",
-          "SrcRelease": "1+deb13u1",
+          "SrcVersion": "3.5.4",
+          "SrcRelease": "1~deb13u1",
           "Licenses": [
             "Apache-2.0",
             "Artistic-2.0",
@@ -5299,11 +5299,11 @@
           "DependsOn": [
             "libc6@2.41-12",
             "libzstd1@1.5.7+dfsg-1",
-            "openssl-provider-legacy@3.5.1-1+deb13u1",
+            "openssl-provider-legacy@3.5.4-1~deb13u1",
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/engines-3/afalg.so",
@@ -5322,7 +5322,7 @@
           "ID": "libstdc++6@14.2.0-19",
           "Name": "libstdc++6",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libstdc%2B%2B6@14.2.0-19?arch=amd64\u0026distro=debian-13.2",
             "UID": "a2daa0680bfc657d"
           },
           "Version": "14.2.0",
@@ -5338,7 +5338,7 @@
             "libgcc-s1@14.2.0-19"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33",
@@ -5350,18 +5350,18 @@
           ]
         },
         {
-          "ID": "libsystemd0@257.8-1~deb13u2",
+          "ID": "libsystemd0@257.9-1~deb13u1",
           "Name": "libsystemd0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libsystemd0@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "b19608333503a8c4"
+            "PURL": "pkg:deb/debian/libsystemd0@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "cfc904cffc1cab8"
           },
-          "Version": "257.8",
-          "Release": "1~deb13u2",
+          "Version": "257.9",
+          "Release": "1~deb13u1",
           "Arch": "amd64",
           "SrcName": "systemd",
-          "SrcVersion": "257.8",
-          "SrcRelease": "1~deb13u2",
+          "SrcVersion": "257.9",
+          "SrcRelease": "1~deb13u1",
           "Licenses": [
             "LGPL-2.1-or-later",
             "CC0-1.0",
@@ -5378,7 +5378,7 @@
             "libcap2@1:2.75-10+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libsystemd.so.0.40.0",
@@ -5391,7 +5391,7 @@
           "ID": "libtasn1-6@4.20.0-2",
           "Name": "libtasn1-6",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libtasn1-6@4.20.0-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libtasn1-6@4.20.0-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "d8be543e1e2c465b"
           },
           "Version": "4.20.0",
@@ -5411,7 +5411,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libtasn1.so.6.6.4",
@@ -5427,7 +5427,7 @@
           "ID": "libtinfo6@6.5+20250216-2",
           "Name": "libtinfo6",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libtinfo6@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libtinfo6@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "39109c87ce11f4ff"
           },
           "Version": "6.5+20250216",
@@ -5446,7 +5446,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libtic.so.6.5",
@@ -5457,18 +5457,18 @@
           ]
         },
         {
-          "ID": "libudev1@257.8-1~deb13u2",
+          "ID": "libudev1@257.9-1~deb13u1",
           "Name": "libudev1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libudev1@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "1a4e2b5bbb145a62"
+            "PURL": "pkg:deb/debian/libudev1@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "1ca70176cbd700b3"
           },
-          "Version": "257.8",
-          "Release": "1~deb13u2",
+          "Version": "257.9",
+          "Release": "1~deb13u1",
           "Arch": "amd64",
           "SrcName": "systemd",
-          "SrcVersion": "257.8",
-          "SrcRelease": "1~deb13u2",
+          "SrcVersion": "257.9",
+          "SrcRelease": "1~deb13u1",
           "Licenses": [
             "LGPL-2.1-or-later",
             "CC0-1.0",
@@ -5485,7 +5485,7 @@
             "libcap2@1:2.75-10+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libudev.so.1.7.10",
@@ -5498,7 +5498,7 @@
           "ID": "libunistring5@1.3-2",
           "Name": "libunistring5",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libunistring5@1.3-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libunistring5@1.3-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "b6f656f97b0ff62"
           },
           "Version": "1.3",
@@ -5534,7 +5534,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libunistring.so.5.2.0",
@@ -5547,7 +5547,7 @@
           "ID": "libuuid1@2.41-5",
           "Name": "libuuid1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e68ae51900aac46d"
           },
           "Version": "2.41",
@@ -5580,7 +5580,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libuuid.so.1.3.0",
@@ -5591,18 +5591,18 @@
           ]
         },
         {
-          "ID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "ID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u2",
           "Name": "libxml2",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "eb95d39440cc9c37"
+            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "70ac7865dfbc63ff"
           },
           "Version": "2.12.7+dfsg+really2.9.14",
-          "Release": "2.1+deb13u1",
+          "Release": "2.1+deb13u2",
           "Arch": "amd64",
           "SrcName": "libxml2",
           "SrcVersion": "2.12.7+dfsg+really2.9.14",
-          "SrcRelease": "2.1+deb13u1",
+          "SrcRelease": "2.1+deb13u2",
           "Licenses": [
             "MIT-1",
             "ISC"
@@ -5614,7 +5614,7 @@
             "zlib1g@1:1.3.dfsg+really1.3.1-1+b1"
           ],
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libxml2.so.2.9.14",
@@ -5630,7 +5630,7 @@
           "ID": "libxxhash0@0.8.3-2",
           "Name": "libxxhash0",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libxxhash0@0.8.3-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libxxhash0@0.8.3-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "ff44a1ed58690c52"
           },
           "Version": "0.8.3",
@@ -5649,7 +5649,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libxxhash.so.0.8.3",
@@ -5662,7 +5662,7 @@
           "ID": "libzstd1@1.5.7+dfsg-1",
           "Name": "libzstd1",
           "Identifier": {
-            "PURL": "pkg:deb/debian/libzstd1@1.5.7%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libzstd1@1.5.7%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "6ca892087d90a628"
           },
           "Version": "1.5.7+dfsg",
@@ -5682,7 +5682,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libzstd.so.1.5.7",
@@ -5695,7 +5695,7 @@
           "ID": "login@1:4.16.0-2+really2.41-5",
           "Name": "login",
           "Identifier": {
-            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "9a6da06303db8b93"
           },
           "Version": "4.16.0-2+really2.41",
@@ -5734,7 +5734,7 @@
             "libpam0g@1.7.0-5"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/login",
@@ -5769,7 +5769,7 @@
           "ID": "login.defs@1:4.17.4-2",
           "Name": "login.defs",
           "Identifier": {
-            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "b2ebc9108569350a"
           },
           "Version": "4.17.4",
@@ -5788,7 +5788,7 @@
           ],
           "Maintainer": "Shadow package maintainers \u003cpkg-shadow-devel@lists.alioth.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/login.defs/NEWS.Debian.gz",
@@ -5809,7 +5809,7 @@
           "ID": "mawk@1.3.4.20250131-1",
           "Name": "mawk",
           "Identifier": {
-            "PURL": "pkg:deb/debian/mawk@1.3.4.20250131-1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/mawk@1.3.4.20250131-1?arch=amd64\u0026distro=debian-13.2",
             "UID": "bea9bf7f923106e2"
           },
           "Version": "1.3.4.20250131",
@@ -5828,7 +5828,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/mawk",
@@ -5856,7 +5856,7 @@
           "ID": "mount@2.41-5",
           "Name": "mount",
           "Identifier": {
-            "PURL": "pkg:deb/debian/mount@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/mount@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "c6fdc5cf989db569"
           },
           "Version": "2.41",
@@ -5886,7 +5886,7 @@
           ],
           "Maintainer": "Chris Hofstaedtler \u003czeha@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/mount",
@@ -5919,7 +5919,7 @@
           "ID": "ncurses-base@6.5+20250216-2",
           "Name": "ncurses-base",
           "Identifier": {
-            "PURL": "pkg:deb/debian/ncurses-base@6.5%2B20250216-2?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/ncurses-base@6.5%2B20250216-2?arch=all\u0026distro=debian-13.2",
             "UID": "76a1fb5936f344dc"
           },
           "Version": "6.5+20250216",
@@ -5935,7 +5935,7 @@
           ],
           "Maintainer": "Ncurses Maintainers \u003cncurses@packages.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/ncurses-base/FAQ",
@@ -5995,7 +5995,7 @@
           "ID": "ncurses-bin@6.5+20250216-2",
           "Name": "ncurses-bin",
           "Identifier": {
-            "PURL": "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "d03e89ad6a7a5243"
           },
           "Version": "6.5+20250216",
@@ -6011,7 +6011,7 @@
           ],
           "Maintainer": "Ncurses Maintainers \u003cncurses@packages.debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/clear",
@@ -6041,18 +6041,18 @@
           ]
         },
         {
-          "ID": "openssl@3.5.1-1+deb13u1",
+          "ID": "openssl@3.5.4-1~deb13u1",
           "Name": "openssl",
           "Identifier": {
-            "PURL": "pkg:deb/debian/openssl@3.5.1-1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "d499b047116a6127"
+            "PURL": "pkg:deb/debian/openssl@3.5.4-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "f8fb834d93efdb28"
           },
-          "Version": "3.5.1",
-          "Release": "1+deb13u1",
+          "Version": "3.5.4",
+          "Release": "1~deb13u1",
           "Arch": "amd64",
           "SrcName": "openssl",
-          "SrcVersion": "3.5.1",
-          "SrcRelease": "1+deb13u1",
+          "SrcVersion": "3.5.4",
+          "SrcRelease": "1~deb13u1",
           "Licenses": [
             "Apache-2.0",
             "Artistic-2.0",
@@ -6062,10 +6062,10 @@
           "Maintainer": "Debian OpenSSL Team \u003cpkg-openssl-devel@alioth-lists.debian.net\u003e",
           "DependsOn": [
             "libc6@2.41-12",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "InstalledFiles": [
             "/usr/bin/c_rehash",
@@ -6310,18 +6310,18 @@
           ]
         },
         {
-          "ID": "openssl-provider-legacy@3.5.1-1+deb13u1",
+          "ID": "openssl-provider-legacy@3.5.4-1~deb13u1",
           "Name": "openssl-provider-legacy",
           "Identifier": {
-            "PURL": "pkg:deb/debian/openssl-provider-legacy@3.5.1-1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "8072c3a4dafcd517"
+            "PURL": "pkg:deb/debian/openssl-provider-legacy@3.5.4-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "37d757b3cffd8ebb"
           },
-          "Version": "3.5.1",
-          "Release": "1+deb13u1",
+          "Version": "3.5.4",
+          "Release": "1~deb13u1",
           "Arch": "amd64",
           "SrcName": "openssl",
-          "SrcVersion": "3.5.1",
-          "SrcRelease": "1+deb13u1",
+          "SrcVersion": "3.5.4",
+          "SrcRelease": "1~deb13u1",
           "Licenses": [
             "Apache-2.0",
             "Artistic-2.0",
@@ -6331,10 +6331,10 @@
           "Maintainer": "Debian OpenSSL Team \u003cpkg-openssl-devel@alioth-lists.debian.net\u003e",
           "DependsOn": [
             "libc6@2.41-12",
-            "libssl3t64@3.5.1-1+deb13u1"
+            "libssl3t64@3.5.4-1~deb13u1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/ossl-modules/legacy.so",
@@ -6347,7 +6347,7 @@
           "ID": "passwd@1:4.17.4-2",
           "Name": "passwd",
           "Identifier": {
-            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "5e15080d1eeaf8e8"
           },
           "Version": "4.17.4",
@@ -6380,7 +6380,7 @@
             "login.defs@1:4.17.4-2"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/chage",
@@ -6715,7 +6715,7 @@
           "ID": "perl-base@5.40.1-6",
           "Name": "perl-base",
           "Identifier": {
-            "PURL": "pkg:deb/debian/perl-base@5.40.1-6?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/perl-base@5.40.1-6?arch=amd64\u0026distro=debian-13.2",
             "UID": "17f06da2c02a11c6"
           },
           "Version": "5.40.1",
@@ -6751,7 +6751,7 @@
           ],
           "Maintainer": "Niko Tyni \u003cntyni@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/perl",
@@ -7384,7 +7384,7 @@
           "ID": "sed@4.9-2",
           "Name": "sed",
           "Identifier": {
-            "PURL": "pkg:deb/debian/sed@4.9-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/sed@4.9-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "b33d5e34015f5d69"
           },
           "Version": "4.9",
@@ -7406,7 +7406,7 @@
           ],
           "Maintainer": "Clint Adams \u003cclint@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/sed",
@@ -7468,7 +7468,7 @@
           "ID": "sqv@1.3.0-3",
           "Name": "sqv",
           "Identifier": {
-            "PURL": "pkg:deb/debian/sqv@1.3.0-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/sqv@1.3.0-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "ab6bad6083333bb9"
           },
           "Version": "1.3.0",
@@ -7490,7 +7490,7 @@
             "libnettle8t64@3.10.1-1"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/sqv",
@@ -7507,7 +7507,7 @@
           "ID": "sysvinit-utils@3.14-4",
           "Name": "sysvinit-utils",
           "Identifier": {
-            "PURL": "pkg:deb/debian/sysvinit-utils@3.14-4?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/sysvinit-utils@3.14-4?arch=amd64\u0026distro=debian-13.2",
             "UID": "c7e8999242a896a1"
           },
           "Version": "3.14",
@@ -7528,7 +7528,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/init/init-d-script",
@@ -7549,7 +7549,7 @@
           "ID": "tar@1.35+dfsg-3.1",
           "Name": "tar",
           "Identifier": {
-            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.2",
             "UID": "50aee76d081ea925"
           },
           "Version": "1.35+dfsg",
@@ -7571,7 +7571,7 @@
           ],
           "Maintainer": "Janos Lenart \u003cocsi@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/tar",
@@ -7634,7 +7634,7 @@
           "ID": "tzdata@2025b-4+deb13u1",
           "Name": "tzdata",
           "Identifier": {
-            "PURL": "pkg:deb/debian/tzdata@2025b-4%2Bdeb13u1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/tzdata@2025b-4%2Bdeb13u1?arch=all\u0026distro=debian-13.2",
             "UID": "d92875c0b47c5838"
           },
           "Version": "2025b",
@@ -7651,7 +7651,7 @@
             "debconf@1.5.91"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/share/doc/tzdata/NEWS.Debian.gz",
@@ -8109,7 +8109,7 @@
           "ID": "util-linux@2.41-5",
           "Name": "util-linux",
           "Identifier": {
-            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "38be4846f19b7fa"
           },
           "Version": "2.41",
@@ -8139,7 +8139,7 @@
           ],
           "Maintainer": "Chris Hofstaedtler \u003czeha@debian.org\u003e",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/bin/choom",
@@ -8396,7 +8396,7 @@
           "ID": "zlib1g@1:1.3.dfsg+really1.3.1-1+b1",
           "Name": "zlib1g",
           "Identifier": {
-            "PURL": "pkg:deb/debian/zlib1g@1.3.dfsg%2Breally1.3.1-1%2Bb1?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/zlib1g@1.3.dfsg%2Breally1.3.1-1%2Bb1?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "4c93a4dae945a3a5"
           },
           "Version": "1.3.dfsg+really1.3.1",
@@ -8415,7 +8415,7 @@
             "libc6@2.41-12"
           ],
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "InstalledFiles": [
             "/usr/lib/x86_64-linux-gnu/libz.so.1.3.1",
@@ -8432,13 +8432,13 @@
           "PkgID": "apt@3.0.3",
           "PkgName": "apt",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/apt@3.0.3?arch=amd64\u0026distro=debian-13.1",
-            "UID": "26cbc052ac267c2"
+            "PURL": "pkg:deb/debian/apt@3.0.3?arch=amd64\u0026distro=debian-13.2",
+            "UID": "6642a59b2f9859f6"
           },
           "InstalledVersion": "3.0.3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-3374",
@@ -8482,13 +8482,13 @@
           "PkgID": "bash@5.2.37-2+b5",
           "PkgName": "bash",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/bash@5.2.37-2%2Bb5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "235aa9088a703d3c"
+            "PURL": "pkg:deb/debian/bash@5.2.37-2%2Bb5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "45cfeabe81518977"
           },
           "InstalledVersion": "5.2.37-2+b5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0841856-B18BAF",
@@ -8508,13 +8508,13 @@
           "PkgID": "bsdutils@1:2.41-5",
           "PkgName": "bsdutils",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/bsdutils@2.41-5?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "c9de60be80a96a27"
           },
           "InstalledVersion": "1:2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -8567,13 +8567,13 @@
           "PkgID": "coreutils@9.7-3",
           "PkgName": "coreutils",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "a90cbdbcbab1768e"
           },
           "InstalledVersion": "9.7-3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-18018",
@@ -8619,13 +8619,13 @@
           "PkgID": "coreutils@9.7-3",
           "PkgName": "coreutils",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/coreutils@9.7-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "a90cbdbcbab1768e"
           },
           "InstalledVersion": "9.7-3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-5278",
@@ -8672,13 +8672,13 @@
           "PkgID": "libapt-pkg7.0@3.0.3",
           "PkgName": "libapt-pkg7.0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libapt-pkg7.0@3.0.3?arch=amd64\u0026distro=debian-13.1",
-            "UID": "80dd2636db3e0564"
+            "PURL": "pkg:deb/debian/libapt-pkg7.0@3.0.3?arch=amd64\u0026distro=debian-13.2",
+            "UID": "a42f664fd0cab715"
           },
           "InstalledVersion": "3.0.3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-3374",
@@ -8722,13 +8722,13 @@
           "PkgID": "libblkid1@2.41-5",
           "PkgName": "libblkid1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libblkid1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "6c9693ac78293e63"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -8781,13 +8781,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2010-4756",
@@ -8836,13 +8836,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20796",
@@ -8893,13 +8893,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010022",
@@ -8943,13 +8943,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010023",
@@ -8996,13 +8996,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010024",
@@ -9053,13 +9053,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010025",
@@ -9109,13 +9109,13 @@
           "PkgID": "libc-bin@2.41-12",
           "PkgName": "libc-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc-bin@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a531ca45463d06a2"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9192",
@@ -9163,13 +9163,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2010-4756",
@@ -9218,13 +9218,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-20796",
@@ -9275,13 +9275,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010022",
@@ -9325,13 +9325,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010023",
@@ -9378,13 +9378,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010024",
@@ -9435,13 +9435,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1010025",
@@ -9491,13 +9491,13 @@
           "PkgID": "libc6@2.41-12",
           "PkgName": "libc6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libc6@2.41-12?arch=amd64\u0026distro=debian-13.2",
             "UID": "a6d2d0103571346b"
           },
           "InstalledVersion": "2.41-12",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-9192",
@@ -9541,144 +9541,17 @@
           "LastModifiedDate": "2024-11-21T04:51:10.53Z"
         },
         {
-          "VulnerabilityID": "CVE-2025-10148",
-          "PkgID": "libcurl4t64@8.14.1-2",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "3e2ea19da6a06f1d"
-          },
-          "InstalledVersion": "8.14.1-2",
-          "FixedVersion": "8.14.1-2+deb13u1",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-10148",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Title": "curl: predictable WebSocket mask",
-          "Description": "curl's websocket code did not update the 32 bit mask pattern for each new\n outgoing frame as the specification says. Instead it used a fixed mask that\npersisted and was used throughout the entire connection.\n\nA predictable mask pattern allows for a malicious server to induce traffic\nbetween the two communicating parties that could be interpreted by an involved\nproxy (configured or transparent) as genuine, real, HTTP traffic with content\nand thereby poison its cache. That cached poisoned content could then be\nserved to all users of that proxy.",
-          "Severity": "MEDIUM",
-          "VendorSeverity": {
-            "azure": 2,
-            "cbl-mariner": 2,
-            "photon": 2,
-            "redhat": 1,
-            "ubuntu": 1
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-              "V3Score": 4.8
-            }
-          },
-          "References": [
-            "http://www.openwall.com/lists/oss-security/2025/09/10/2",
-            "http://www.openwall.com/lists/oss-security/2025/09/10/3",
-            "https://access.redhat.com/security/cve/CVE-2025-10148",
-            "https://curl.se/docs/CVE-2025-10148.html",
-            "https://curl.se/docs/CVE-2025-10148.json",
-            "https://hackerone.com/reports/3330839",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-10148",
-            "https://www.cve.org/CVERecord?id=CVE-2025-10148"
-          ],
-          "PublishedDate": "2025-09-12T06:15:40.02Z",
-          "LastModifiedDate": "2025-11-04T22:16:05.137Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-11563",
-          "PkgID": "libcurl4t64@8.14.1-2",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "3e2ea19da6a06f1d"
-          },
-          "InstalledVersion": "8.14.1-2",
-          "FixedVersion": "8.14.1-2+deb13u2",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-11563",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Description": "wcurl path traversal with percent-encoded slashes",
-          "Severity": "MEDIUM",
-          "VendorSeverity": {
-            "ubuntu": 2
-          },
-          "References": [
-            "https://curl.se/docs/CVE-2025-11563.html",
-            "https://www.cve.org/CVERecord?id=CVE-2025-11563"
-          ]
-        },
-        {
-          "VulnerabilityID": "CVE-2025-9086",
-          "PkgID": "libcurl4t64@8.14.1-2",
-          "PkgName": "libcurl4t64",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "3e2ea19da6a06f1d"
-          },
-          "InstalledVersion": "8.14.1-2",
-          "FixedVersion": "8.14.1-2+deb13u1",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
-          },
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-9086",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Title": "curl: libcurl: Curl out of bounds read for cookie path",
-          "Description": "1. A cookie is set using the `secure` keyword for `https://target`\n2. curl is redirected to or otherwise made to speak with `http://target` (same\n   hostname, but using clear text HTTP) using the same cookie set\n3. The same cookie name is set - but with just a slash as path (`path='/'`).\n   Since this site is not secure, the cookie *should* just be ignored.\n4. A bug in the path comparison logic makes curl read outside a heap buffer\n   boundary\n\nThe bug either causes a crash or it potentially makes the comparison come to\nthe wrong conclusion and lets the clear-text site override the contents of the\nsecure cookie, contrary to expectations and depending on the memory contents\nimmediately following the single-byte allocation that holds the path.\n\nThe presumed and correct behavior would be to plainly ignore the second set of\nthe cookie since it was already set as secure on a secure host so overriding\nit on an insecure host should not be okay.",
-          "Severity": "MEDIUM",
-          "VendorSeverity": {
-            "amazon": 1,
-            "photon": 3,
-            "redhat": 2,
-            "ubuntu": 1
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
-              "V3Score": 5.3
-            }
-          },
-          "References": [
-            "http://www.openwall.com/lists/oss-security/2025/09/10/1",
-            "https://access.redhat.com/security/cve/CVE-2025-9086",
-            "https://curl.se/docs/CVE-2025-9086.html",
-            "https://curl.se/docs/CVE-2025-9086.json",
-            "https://github.com/curl/curl/commit/c6ae07c6a541e0e96d0040afb6",
-            "https://hackerone.com/reports/3294999",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-9086",
-            "https://www.cve.org/CVERecord?id=CVE-2025-9086"
-          ],
-          "PublishedDate": "2025-09-12T06:15:44.1Z",
-          "LastModifiedDate": "2025-11-04T22:16:45.19Z"
-        },
-        {
           "VulnerabilityID": "CVE-2025-10966",
-          "PkgID": "libcurl4t64@8.14.1-2",
+          "PkgID": "libcurl4t64@8.14.1-2+deb13u2",
           "PkgName": "libcurl4t64",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "3e2ea19da6a06f1d"
+            "PURL": "pkg:deb/debian/libcurl4t64@8.14.1-2%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "94dff8529c4b3663"
           },
-          "InstalledVersion": "8.14.1-2",
+          "InstalledVersion": "8.14.1-2+deb13u2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-10966",
@@ -9718,13 +9591,13 @@
           "PkgID": "libexpat1@2.7.1-2",
           "PkgName": "libexpat1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libexpat1@2.7.1-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "c2e467a61b1e160e"
           },
           "InstalledVersion": "2.7.1-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-59375",
           "DataSource": {
@@ -9777,13 +9650,13 @@
           "PkgID": "libgnutls30t64@3.8.9-3",
           "PkgName": "libgnutls30t64",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64\u0026distro=debian-13.2",
             "UID": "ff33dbe4723118d9"
           },
           "InstalledVersion": "3.8.9-3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-3389",
@@ -9922,13 +9795,13 @@
           "PkgID": "libgssapi-krb5-2@1.21.3-5",
           "PkgName": "libgssapi-krb5-2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e981ef95af866663"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-5709",
@@ -9975,13 +9848,13 @@
           "PkgID": "libgssapi-krb5-2@1.21.3-5",
           "PkgName": "libgssapi-krb5-2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e981ef95af866663"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
@@ -10043,13 +9916,13 @@
           "PkgID": "libgssapi-krb5-2@1.21.3-5",
           "PkgName": "libgssapi-krb5-2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libgssapi-krb5-2@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e981ef95af866663"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
@@ -10111,13 +9984,13 @@
           "PkgID": "libjansson4@2.14-2+b3",
           "PkgName": "libjansson4",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libjansson4@2.14-2%2Bb3?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libjansson4@2.14-2%2Bb3?arch=amd64\u0026distro=debian-13.2",
             "UID": "f2f7542d83d235f"
           },
           "InstalledVersion": "2.14-2+b3",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-36325",
@@ -10164,13 +10037,13 @@
           "PkgID": "libk5crypto3@1.21.3-5",
           "PkgName": "libk5crypto3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "654244e38d239af9"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-5709",
@@ -10217,13 +10090,13 @@
           "PkgID": "libk5crypto3@1.21.3-5",
           "PkgName": "libk5crypto3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "654244e38d239af9"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
@@ -10285,13 +10158,13 @@
           "PkgID": "libk5crypto3@1.21.3-5",
           "PkgName": "libk5crypto3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libk5crypto3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "654244e38d239af9"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
@@ -10353,13 +10226,13 @@
           "PkgID": "libkrb5-3@1.21.3-5",
           "PkgName": "libkrb5-3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "42eb2a7522db520b"
+            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "198ff5a921cdf154"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-5709",
@@ -10406,13 +10279,13 @@
           "PkgID": "libkrb5-3@1.21.3-5",
           "PkgName": "libkrb5-3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "42eb2a7522db520b"
+            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "198ff5a921cdf154"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
@@ -10474,13 +10347,13 @@
           "PkgID": "libkrb5-3@1.21.3-5",
           "PkgName": "libkrb5-3",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
-            "UID": "42eb2a7522db520b"
+            "PURL": "pkg:deb/debian/libkrb5-3@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
+            "UID": "198ff5a921cdf154"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
@@ -10542,13 +10415,13 @@
           "PkgID": "libkrb5support0@1.21.3-5",
           "PkgName": "libkrb5support0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7b7b2ceb7abdb0a3"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2018-5709",
@@ -10595,13 +10468,13 @@
           "PkgID": "libkrb5support0@1.21.3-5",
           "PkgName": "libkrb5support0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7b7b2ceb7abdb0a3"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26458",
@@ -10663,13 +10536,13 @@
           "PkgID": "libkrb5support0@1.21.3-5",
           "PkgName": "libkrb5support0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libkrb5support0@1.21.3-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "7b7b2ceb7abdb0a3"
           },
           "InstalledVersion": "1.21.3-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-26461",
@@ -10731,13 +10604,13 @@
           "PkgID": "liblastlog2-2@2.41-5",
           "PkgName": "liblastlog2-2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/liblastlog2-2@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "df76396cbfd04981"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -10790,13 +10663,13 @@
           "PkgID": "libldap-common@2.6.10+dfsg-1",
           "PkgName": "libldap-common",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.2",
             "UID": "19017187844935cd"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2015-3276",
@@ -10847,13 +10720,13 @@
           "PkgID": "libldap-common@2.6.10+dfsg-1",
           "PkgName": "libldap-common",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.2",
             "UID": "19017187844935cd"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-14159",
@@ -10900,13 +10773,13 @@
           "PkgID": "libldap-common@2.6.10+dfsg-1",
           "PkgName": "libldap-common",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.2",
             "UID": "19017187844935cd"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-17740",
@@ -10956,13 +10829,13 @@
           "PkgID": "libldap-common@2.6.10+dfsg-1",
           "PkgName": "libldap-common",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libldap-common@2.6.10%2Bdfsg-1?arch=all\u0026distro=debian-13.2",
             "UID": "19017187844935cd"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-15719",
@@ -11019,13 +10892,13 @@
           "PkgID": "libldap2@2.6.10+dfsg-1",
           "PkgName": "libldap2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "4f4bae24df52de41"
+            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "e3bb10dd5d9ac596"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2015-3276",
@@ -11076,13 +10949,13 @@
           "PkgID": "libldap2@2.6.10+dfsg-1",
           "PkgName": "libldap2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "4f4bae24df52de41"
+            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "e3bb10dd5d9ac596"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-14159",
@@ -11129,13 +11002,13 @@
           "PkgID": "libldap2@2.6.10+dfsg-1",
           "PkgName": "libldap2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "4f4bae24df52de41"
+            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "e3bb10dd5d9ac596"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2017-17740",
@@ -11185,13 +11058,13 @@
           "PkgID": "libldap2@2.6.10+dfsg-1",
           "PkgName": "libldap2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "4f4bae24df52de41"
+            "PURL": "pkg:deb/debian/libldap2@2.6.10%2Bdfsg-1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "e3bb10dd5d9ac596"
           },
           "InstalledVersion": "2.6.10+dfsg-1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:13d3747eece72c43030e271067a3a11168c6c0575778fa78276d27144c2f9836"
+            "DiffID": "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-15719",
@@ -11248,13 +11121,13 @@
           "PkgID": "libmount1@2.41-5",
           "PkgName": "libmount1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libmount1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "6d2d7374cd54451e"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -11307,13 +11180,13 @@
           "PkgID": "libsmartcols1@2.41-5",
           "PkgName": "libsmartcols1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsmartcols1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "bdd963006efde917"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -11366,13 +11239,13 @@
           "PkgID": "libsqlite3-0@3.46.1-7",
           "PkgName": "libsqlite3-0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.2",
             "UID": "d3b12dcb7bd33f74"
           },
           "InstalledVersion": "3.46.1-7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-7709",
           "DataSource": {
@@ -11404,13 +11277,13 @@
           "PkgID": "libsqlite3-0@3.46.1-7",
           "PkgName": "libsqlite3-0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libsqlite3-0@3.46.1-7?arch=amd64\u0026distro=debian-13.2",
             "UID": "d3b12dcb7bd33f74"
           },
           "InstalledVersion": "3.46.1-7",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-45346",
@@ -11462,16 +11335,16 @@
         },
         {
           "VulnerabilityID": "CVE-2013-4392",
-          "PkgID": "libsystemd0@257.8-1~deb13u2",
+          "PkgID": "libsystemd0@257.9-1~deb13u1",
           "PkgName": "libsystemd0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsystemd0@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "b19608333503a8c4"
+            "PURL": "pkg:deb/debian/libsystemd0@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "cfc904cffc1cab8"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4392",
@@ -11514,16 +11387,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31437",
-          "PkgID": "libsystemd0@257.8-1~deb13u2",
+          "PkgID": "libsystemd0@257.9-1~deb13u1",
           "PkgName": "libsystemd0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsystemd0@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "b19608333503a8c4"
+            "PURL": "pkg:deb/debian/libsystemd0@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "cfc904cffc1cab8"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31437",
@@ -11558,16 +11431,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31438",
-          "PkgID": "libsystemd0@257.8-1~deb13u2",
+          "PkgID": "libsystemd0@257.9-1~deb13u1",
           "PkgName": "libsystemd0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsystemd0@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "b19608333503a8c4"
+            "PURL": "pkg:deb/debian/libsystemd0@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "cfc904cffc1cab8"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31438",
@@ -11603,16 +11476,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31439",
-          "PkgID": "libsystemd0@257.8-1~deb13u2",
+          "PkgID": "libsystemd0@257.9-1~deb13u1",
           "PkgName": "libsystemd0",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libsystemd0@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "b19608333503a8c4"
+            "PURL": "pkg:deb/debian/libsystemd0@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "cfc904cffc1cab8"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31439",
@@ -11652,13 +11525,13 @@
           "PkgID": "libtinfo6@6.5+20250216-2",
           "PkgName": "libtinfo6",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libtinfo6@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libtinfo6@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "39109c87ce11f4ff"
           },
           "InstalledVersion": "6.5+20250216-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6141",
           "DataSource": {
@@ -11701,16 +11574,16 @@
         },
         {
           "VulnerabilityID": "CVE-2013-4392",
-          "PkgID": "libudev1@257.8-1~deb13u2",
+          "PkgID": "libudev1@257.9-1~deb13u1",
           "PkgName": "libudev1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libudev1@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "1a4e2b5bbb145a62"
+            "PURL": "pkg:deb/debian/libudev1@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "1ca70176cbd700b3"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2013-4392",
@@ -11753,16 +11626,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31437",
-          "PkgID": "libudev1@257.8-1~deb13u2",
+          "PkgID": "libudev1@257.9-1~deb13u1",
           "PkgName": "libudev1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libudev1@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "1a4e2b5bbb145a62"
+            "PURL": "pkg:deb/debian/libudev1@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "1ca70176cbd700b3"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31437",
@@ -11797,16 +11670,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31438",
-          "PkgID": "libudev1@257.8-1~deb13u2",
+          "PkgID": "libudev1@257.9-1~deb13u1",
           "PkgName": "libudev1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libudev1@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "1a4e2b5bbb145a62"
+            "PURL": "pkg:deb/debian/libudev1@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "1ca70176cbd700b3"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31438",
@@ -11842,16 +11715,16 @@
         },
         {
           "VulnerabilityID": "CVE-2023-31439",
-          "PkgID": "libudev1@257.8-1~deb13u2",
+          "PkgID": "libudev1@257.9-1~deb13u1",
           "PkgName": "libudev1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libudev1@257.8-1~deb13u2?arch=amd64\u0026distro=debian-13.1",
-            "UID": "1a4e2b5bbb145a62"
+            "PURL": "pkg:deb/debian/libudev1@257.9-1~deb13u1?arch=amd64\u0026distro=debian-13.2",
+            "UID": "1ca70176cbd700b3"
           },
-          "InstalledVersion": "257.8-1~deb13u2",
+          "InstalledVersion": "257.9-1~deb13u1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-31439",
@@ -11891,13 +11764,13 @@
           "PkgID": "libuuid1@2.41-5",
           "PkgName": "libuuid1",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/libuuid1@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "e68ae51900aac46d"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -11947,16 +11820,16 @@
         },
         {
           "VulnerabilityID": "CVE-2025-12863",
-          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u2",
           "PkgName": "libxml2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "eb95d39440cc9c37"
+            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "70ac7865dfbc63ff"
           },
-          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-12863",
           "DataSource": {
@@ -11989,72 +11862,17 @@
           "LastModifiedDate": "2025-11-12T16:20:22.257Z"
         },
         {
-          "VulnerabilityID": "CVE-2025-9714",
-          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u1",
-          "PkgName": "libxml2",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "eb95d39440cc9c37"
-          },
-          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u1",
-          "FixedVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "fixed",
-          "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
-          },
-          "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-9714",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Title": "libxslt: libxml2: Inifinite recursion at exsltDynMapFunction function in libexslt/dynamic.c",
-          "Description": "Uncontrolled recursion in XPath evaluation in libxml2 up to and including version 2.9.14 allows a local attacker to cause a stack overflow via crafted expressions. XPath processing functions `xmlXPathRunEval`, `xmlXPathCtxtCompile`, and `xmlXPathEvalExpr` were resetting recursion depth to zero before making potentially recursive calls. When such functions were called recursively this could allow for uncontrolled recursion and lead to a stack overflow. These functions now preserve recursion depth across recursive calls, allowing recursion depth to be controlled.",
-          "Severity": "MEDIUM",
-          "CweIDs": [
-            "CWE-674"
-          ],
-          "VendorSeverity": {
-            "nvd": 2,
-            "redhat": 2,
-            "ubuntu": 2
-          },
-          "CVSS": {
-            "nvd": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 5.5
-            },
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 6.2
-            }
-          },
-          "References": [
-            "https://access.redhat.com/security/cve/CVE-2025-9714",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2392605",
-            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/677a42645ef22b5a50741bad5facf9d8a8bc6d21",
-            "https://gitlab.gnome.org/GNOME/libxslt/-/issues/148",
-            "https://lists.debian.org/debian-lts-announce/2025/09/msg00035.html",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-9714",
-            "https://ubuntu.com/security/notices/USN-7743-1",
-            "https://www.cve.org/CVERecord?id=CVE-2025-9714"
-          ],
-          "PublishedDate": "2025-09-10T19:15:42.707Z",
-          "LastModifiedDate": "2025-11-03T19:16:17.563Z"
-        },
-        {
           "VulnerabilityID": "CVE-2025-8732",
-          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u2",
           "PkgName": "libxml2",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u1?arch=amd64\u0026distro=debian-13.1",
-            "UID": "eb95d39440cc9c37"
+            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
+            "UID": "70ac7865dfbc63ff"
           },
-          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u1",
+          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:28962f8cc60fafa01bb0414a32d9e24746d2504f5d79dca15e1aea2eb9bd3700"
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-8732",
@@ -12099,13 +11917,13 @@
           "PkgID": "login@1:4.16.0-2+really2.41-5",
           "PkgName": "login",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login@4.16.0-2%2Breally2.41-5?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "9a6da06303db8b93"
           },
           "InstalledVersion": "1:4.16.0-2+really2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -12158,13 +11976,13 @@
           "PkgID": "login.defs@1:4.17.4-2",
           "PkgName": "login.defs",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "b2ebc9108569350a"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2007-5686",
@@ -12205,13 +12023,13 @@
           "PkgID": "login.defs@1:4.17.4-2",
           "PkgName": "login.defs",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "b2ebc9108569350a"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-56433",
           "DataSource": {
@@ -12252,13 +12070,13 @@
           "PkgID": "login.defs@1:4.17.4-2",
           "PkgName": "login.defs",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/login.defs@4.17.4-2?arch=all\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "b2ebc9108569350a"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0628843-DBAD28",
@@ -12278,13 +12096,13 @@
           "PkgID": "mount@2.41-5",
           "PkgName": "mount",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/mount@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/mount@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "c6fdc5cf989db569"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
@@ -12337,13 +12155,13 @@
           "PkgID": "ncurses-base@6.5+20250216-2",
           "PkgName": "ncurses-base",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/ncurses-base@6.5%2B20250216-2?arch=all\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/ncurses-base@6.5%2B20250216-2?arch=all\u0026distro=debian-13.2",
             "UID": "76a1fb5936f344dc"
           },
           "InstalledVersion": "6.5+20250216-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6141",
           "DataSource": {
@@ -12389,13 +12207,13 @@
           "PkgID": "ncurses-bin@6.5+20250216-2",
           "PkgName": "ncurses-bin",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/ncurses-bin@6.5%2B20250216-2?arch=amd64\u0026distro=debian-13.2",
             "UID": "d03e89ad6a7a5243"
           },
           "InstalledVersion": "6.5+20250216-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6141",
           "DataSource": {
@@ -12441,13 +12259,13 @@
           "PkgID": "passwd@1:4.17.4-2",
           "PkgName": "passwd",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "5e15080d1eeaf8e8"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2007-5686",
@@ -12488,13 +12306,13 @@
           "PkgID": "passwd@1:4.17.4-2",
           "PkgName": "passwd",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "5e15080d1eeaf8e8"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-56433",
           "DataSource": {
@@ -12535,13 +12353,13 @@
           "PkgID": "passwd@1:4.17.4-2",
           "PkgName": "passwd",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.1\u0026epoch=1",
+            "PURL": "pkg:deb/debian/passwd@4.17.4-2?arch=amd64\u0026distro=debian-13.2\u0026epoch=1",
             "UID": "5e15080d1eeaf8e8"
           },
           "InstalledVersion": "1:4.17.4-2",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0628843-DBAD28",
@@ -12561,13 +12379,13 @@
           "PkgID": "perl-base@5.40.1-6",
           "PkgName": "perl-base",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/perl-base@5.40.1-6?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/perl-base@5.40.1-6?arch=amd64\u0026distro=debian-13.2",
             "UID": "17f06da2c02a11c6"
           },
           "InstalledVersion": "5.40.1-6",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2011-4116",
@@ -12617,13 +12435,13 @@
           "PkgID": "sysvinit-utils@3.14-4",
           "PkgName": "sysvinit-utils",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/sysvinit-utils@3.14-4?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/sysvinit-utils@3.14-4?arch=amd64\u0026distro=debian-13.2",
             "UID": "c7e8999242a896a1"
           },
           "InstalledVersion": "3.14-4",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0517018-A83CE6",
@@ -12643,13 +12461,13 @@
           "PkgID": "tar@1.35+dfsg-3.1",
           "PkgName": "tar",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.2",
             "UID": "50aee76d081ea925"
           },
           "InstalledVersion": "1.35+dfsg-3.1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2005-2541",
@@ -12691,13 +12509,13 @@
           "PkgID": "tar@1.35+dfsg-3.1",
           "PkgName": "tar",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/tar@1.35%2Bdfsg-3.1?arch=amd64\u0026distro=debian-13.2",
             "UID": "50aee76d081ea925"
           },
           "InstalledVersion": "1.35+dfsg-3.1",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://security-tracker.debian.org/tracker/TEMP-0290435-0B57B5",
@@ -12717,13 +12535,13 @@
           "PkgID": "util-linux@2.41-5",
           "PkgName": "util-linux",
           "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=amd64\u0026distro=debian-13.1",
+            "PURL": "pkg:deb/debian/util-linux@2.41-5?arch=amd64\u0026distro=debian-13.2",
             "UID": "38be4846f19b7fa"
           },
           "InstalledVersion": "2.41-5",
           "Status": "affected",
           "Layer": {
-            "DiffID": "sha256:36d06fe0cbc654e5f67d58c960ed33e53127e4a3288d8ce6f6a60a9c311794d4"
+            "DiffID": "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb"
           },
           "SeveritySource": "debian",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0563",
