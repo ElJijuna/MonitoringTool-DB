@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-20T06:33:49.494077679Z",
+  "CreatedAt": "2025-11-21T06:35:08.73243868Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.2"
     },
-    "ImageID": "sha256:7b003adbf6d1b1286923ff731f81a66204019f2b66f02aaae609f1dbb1a29195",
+    "ImageID": "sha256:0e858e82bbb26b039bc07e1d4595edd8521f248f5906e1720f04db6bfc2a3a67",
     "DiffIDs": [
       "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb",
       "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad",
@@ -17,15 +17,15 @@
       "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
       "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
       "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-      "sha256:7e29243242e6aa72ef10327271579585a41e6e32f570921f7151c441bfa0bf50",
-      "sha256:051cb6ee9023f7d19460fa0795d3f39eb3490af2b2680c325dc0e9fa3edcff3a"
+      "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36",
+      "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-20T06:33:39.279414317Z",
+      "created": "2025-11-21T06:34:59.923114748Z",
       "history": [
         {
           "created": "2025-11-17T00:00:00Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-20T06:33:39Z",
+          "created": "2025-11-21T06:34:59Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-20T06:33:39Z",
+          "created": "2025-11-21T06:34:59Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-20T06:33:39Z",
+          "created": "2025-11-21T06:34:59Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-20T06:33:39Z",
+          "created": "2025-11-21T06:34:59Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
           "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
           "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-          "sha256:7e29243242e6aa72ef10327271579585a41e6e32f570921f7151c441bfa0bf50",
-          "sha256:051cb6ee9023f7d19460fa0795d3f39eb3490af2b2680c325dc0e9fa3edcff3a"
+          "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36",
+          "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:7e29243242e6aa72ef10327271579585a41e6e32f570921f7151c441bfa0bf50"
+        "DiffID": "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:051cb6ee9023f7d19460fa0795d3f39eb3490af2b2680c325dc0e9fa3edcff3a"
+        "DiffID": "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
       }
     ]
   },
@@ -9628,10 +9628,10 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/16/2",
-            "https://access.redhat.com/errata/RHSA-2025:19403",
+            "https://access.redhat.com/errata/RHSA-2025:21776",
             "https://access.redhat.com/security/cve/CVE-2025-59375",
             "https://bugzilla.redhat.com/2395108",
-            "https://errata.almalinux.org/10/ALSA-2025-19403.html",
+            "https://errata.almalinux.org/8/ALSA-2025-21776.html",
             "https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74",
             "https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes",
             "https://github.com/libexpat/libexpat/issues/1018",
@@ -9789,6 +9789,28 @@
           ],
           "PublishedDate": "2011-09-06T19:55:03.197Z",
           "LastModifiedDate": "2025-04-11T00:51:21.963Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-9820",
+          "PkgID": "libgnutls30t64@3.8.9-3",
+          "PkgName": "libgnutls30t64",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libgnutls30t64@3.8.9-3?arch=amd64\u0026distro=debian-13.2",
+            "UID": "ff33dbe4723118d9"
+          },
+          "InstalledVersion": "3.8.9-3",
+          "Status": "affected",
+          "Layer": {
+            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-9820",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "[GNUTLS-SA-2025-11-18]",
+          "Severity": "UNKNOWN"
         },
         {
           "VulnerabilityID": "CVE-2018-5709",
@@ -11818,51 +11840,6 @@
           ],
           "PublishedDate": "2022-02-21T19:15:08.393Z",
           "LastModifiedDate": "2025-06-09T16:15:33.237Z"
-        },
-        {
-          "VulnerabilityID": "CVE-2025-12863",
-          "PkgID": "libxml2@2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "PkgName": "libxml2",
-          "PkgIdentifier": {
-            "PURL": "pkg:deb/debian/libxml2@2.12.7%2Bdfsg%2Breally2.9.14-2.1%2Bdeb13u2?arch=amd64\u0026distro=debian-13.2",
-            "UID": "70ac7865dfbc63ff"
-          },
-          "InstalledVersion": "2.12.7+dfsg+really2.9.14-2.1+deb13u2",
-          "Status": "affected",
-          "Layer": {
-            "DiffID": "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198"
-          },
-          "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-12863",
-          "DataSource": {
-            "ID": "debian",
-            "Name": "Debian Security Tracker",
-            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
-          },
-          "Title": "libxml2: Namespace Use-After-Free in xmlSetTreeDoc() function of libxml2",
-          "Description": "A flaw was found in the xmlSetTreeDoc() function of the libxml2 XML parsing library. This function is responsible for updating document pointers when XML nodes are moved between documents. Due to improper handling of namespace references, a namespace pointer may remain linked to a freed memory region when the original document is destroyed. As a result, subsequent operations that access the namespace can lead to a use-after-free condition, causing an application crash.",
-          "Severity": "LOW",
-          "CweIDs": [
-            "CWE-416"
-          ],
-          "VendorSeverity": {
-            "debian": 1,
-            "redhat": 3
-          },
-          "CVSS": {
-            "redhat": {
-              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "V3Score": 7.5
-            }
-          },
-          "References": [
-            "https://access.redhat.com/security/cve/CVE-2025-12863",
-            "https://bugzilla.redhat.com/show_bug.cgi?id=2413323",
-            "https://nvd.nist.gov/vuln/detail/CVE-2025-12863",
-            "https://www.cve.org/CVERecord?id=CVE-2025-12863"
-          ],
-          "PublishedDate": "2025-11-07T21:15:40.393Z",
-          "LastModifiedDate": "2025-11-12T16:20:22.257Z"
         },
         {
           "VulnerabilityID": "CVE-2025-8732",
