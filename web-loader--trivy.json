@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-11-21T06:35:08.73243868Z",
+  "CreatedAt": "2025-11-22T06:30:55.073351572Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.2"
     },
-    "ImageID": "sha256:0e858e82bbb26b039bc07e1d4595edd8521f248f5906e1720f04db6bfc2a3a67",
+    "ImageID": "sha256:38cf174584f84ce62ed8b77e7c3d18b619d2485f3bba3953940b7f5866d4bd86",
     "DiffIDs": [
       "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb",
       "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad",
@@ -17,15 +17,15 @@
       "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
       "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
       "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-      "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36",
-      "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
+      "sha256:943b1d75d014853da7347f0c4c7241553b68b70c625aae9436da4968ada71138",
+      "sha256:1ab0d2bd01d2b4e50f86444c9131bbf1266f39a5aa43943ee34905ff01c1ceb3"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-11-21T06:34:59.923114748Z",
+      "created": "2025-11-22T06:30:46.818669388Z",
       "history": [
         {
           "created": "2025-11-17T00:00:00Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-11-21T06:34:59Z",
+          "created": "2025-11-22T06:30:46Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-21T06:34:59Z",
+          "created": "2025-11-22T06:30:46Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-11-21T06:34:59Z",
+          "created": "2025-11-22T06:30:46Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-11-21T06:34:59Z",
+          "created": "2025-11-22T06:30:46Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
           "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
           "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-          "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36",
-          "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
+          "sha256:943b1d75d014853da7347f0c4c7241553b68b70c625aae9436da4968ada71138",
+          "sha256:1ab0d2bd01d2b4e50f86444c9131bbf1266f39a5aa43943ee34905ff01c1ceb3"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:ca5589d0afb7b19e85988d1800d5909fe90bea763ac14913db2cfcf1c222ac36"
+        "DiffID": "sha256:943b1d75d014853da7347f0c4c7241553b68b70c625aae9436da4968ada71138"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:44dda5cbdc5c3ea915cc66008a0f1cb2103ef583f84795053151aabe712dccfb"
+        "DiffID": "sha256:1ab0d2bd01d2b4e50f86444c9131bbf1266f39a5aa43943ee34905ff01c1ceb3"
       }
     ]
   },
@@ -9638,7 +9638,7 @@
             "https://github.com/libexpat/libexpat/pull/1034",
             "https://issues.oss-fuzz.com/issues/439133977",
             "https://linux.oracle.com/cve/CVE-2025-59375.html",
-            "https://linux.oracle.com/errata/ELSA-2025-19403.html",
+            "https://linux.oracle.com/errata/ELSA-2025-21776.html",
             "https://nvd.nist.gov/vuln/detail/CVE-2025-59375",
             "https://www.cve.org/CVERecord?id=CVE-2025-59375"
           ],
