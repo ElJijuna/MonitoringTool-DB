@@ -1,6 +1,6 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-12-01T06:38:07.826202524Z",
+  "CreatedAt": "2025-12-02T06:36:48.742830232Z",
   "ArtifactName": "web-loader",
   "ArtifactType": "container_image",
   "Metadata": {
@@ -9,7 +9,7 @@
       "Family": "debian",
       "Name": "13.2"
     },
-    "ImageID": "sha256:bdf02573eb1358c7307dccda85107bdc41337029971cb663a3006a3917f42093",
+    "ImageID": "sha256:31196fe32b4466a0cce9aa5fabc3bd048d021c06d0455e5c9949b369d7f14b54",
     "DiffIDs": [
       "sha256:70a290c5e58b68f39496ab93a62f21b8b2ca0502e97905131838de1b39a37cbb",
       "sha256:de88e4999fda633254a27ec2c1a544fc99a537452047b7c2291d929c88e7c8ad",
@@ -17,15 +17,15 @@
       "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
       "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
       "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-      "sha256:d9245a6a5bd2b6e0397d6d830b7e9b4f0881f15f363785cf2e16b6e260849ad8",
-      "sha256:a17c5a998fc19631486d5276272ad1aa9dfb8aa14d40637c11f33f21f725200b"
+      "sha256:bb061d6e76ea8c090ddab9db29b33b1c5a5683867c199fc6a6a0a7ae3f23a5c0",
+      "sha256:9aad5d06dc0e82fd87e7a643cfacbd8b367175200df975bc7e339f346459217d"
     ],
     "RepoTags": [
       "web-loader:latest"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-12-01T06:37:57.135971115Z",
+      "created": "2025-12-02T06:36:39.992375659Z",
       "history": [
         {
           "created": "2025-11-17T00:00:00Z",
@@ -106,23 +106,23 @@
           "empty_layer": true
         },
         {
-          "created": "2025-12-01T06:37:57Z",
+          "created": "2025-12-02T06:36:39Z",
           "created_by": "COPY httpd.conf /usr/local/apache2/conf/httpd.conf # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-12-01T06:37:57Z",
+          "created": "2025-12-02T06:36:39Z",
           "created_by": "COPY src /usr/local/apache2/htdocs/ # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-12-01T06:37:57Z",
+          "created": "2025-12-02T06:36:39Z",
           "created_by": "EXPOSE map[80/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-12-01T06:37:57Z",
+          "created": "2025-12-02T06:36:39Z",
           "created_by": "CMD [\"httpd\" \"-D\" \"FOREGROUND\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -138,8 +138,8 @@
           "sha256:5dc0365682c64f7f609c24f251b8aa8e23f06d2a7173c4bfda7a75c7ecf8fb7f",
           "sha256:1b73832a486843e9370366283c40daf298c85e77d4787b6da7804a3d93576198",
           "sha256:3ecb2dcd541478fbfcb6d2976471d5708186caf1f903c1ec745ce7787ccb017f",
-          "sha256:d9245a6a5bd2b6e0397d6d830b7e9b4f0881f15f363785cf2e16b6e260849ad8",
-          "sha256:a17c5a998fc19631486d5276272ad1aa9dfb8aa14d40637c11f33f21f725200b"
+          "sha256:bb061d6e76ea8c090ddab9db29b33b1c5a5683867c199fc6a6a0a7ae3f23a5c0",
+          "sha256:9aad5d06dc0e82fd87e7a643cfacbd8b367175200df975bc7e339f346459217d"
         ]
       },
       "config": {
@@ -190,11 +190,11 @@
       },
       {
         "Size": 25088,
-        "DiffID": "sha256:d9245a6a5bd2b6e0397d6d830b7e9b4f0881f15f363785cf2e16b6e260849ad8"
+        "DiffID": "sha256:bb061d6e76ea8c090ddab9db29b33b1c5a5683867c199fc6a6a0a7ae3f23a5c0"
       },
       {
         "Size": 28672,
-        "DiffID": "sha256:a17c5a998fc19631486d5276272ad1aa9dfb8aa14d40637c11f33f21f725200b"
+        "DiffID": "sha256:9aad5d06dc0e82fd87e7a643cfacbd8b367175200df975bc7e339f346459217d"
       }
     ]
   },
@@ -9629,12 +9629,12 @@
           },
           "References": [
             "http://www.openwall.com/lists/oss-security/2025/09/16/2",
-            "https://access.redhat.com/errata/RHSA-2025:21776",
+            "https://access.redhat.com/errata/RHSA-2025:21974",
             "https://access.redhat.com/security/cve/CVE-2025-59375",
             "https://bugzilla.redhat.com/2395108",
             "https://bugzilla.redhat.com/show_bug.cgi?id=2395108",
             "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-59375",
-            "https://errata.almalinux.org/8/ALSA-2025-21776.html",
+            "https://errata.almalinux.org/8/ALSA-2025-21974.html",
             "https://errata.rockylinux.org/RLSA-2025:21776",
             "https://github.com/libexpat/libexpat/blob/676a4c531ec768732fac215da9730b5f50fbd2bf/expat/Changes#L45-L74",
             "https://github.com/libexpat/libexpat/blob/R_2_7_2/expat/Changes",
@@ -9690,7 +9690,7 @@
             "https://www.cve.org/CVERecord?id=CVE-2025-66382"
           ],
           "PublishedDate": "2025-11-28T07:15:57.9Z",
-          "LastModifiedDate": "2025-11-28T07:15:57.9Z"
+          "LastModifiedDate": "2025-12-01T15:39:33.11Z"
         },
         {
           "VulnerabilityID": "CVE-2011-3389",
