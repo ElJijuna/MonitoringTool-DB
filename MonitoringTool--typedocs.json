@@ -1,0 +1,26 @@
+{
+	"schemaVersion": "2.0",
+	"id": 0,
+	"name": "monitoring-tool",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"packageName": "monitoring-tool",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "# Monitoring Tool"
+		}
+	],
+	"symbolIdMap": {},
+	"files": {
+		"entries": {
+			"1": "README.md",
+			"2": ""
+		},
+		"reflections": {
+			"1": 0,
+			"2": 0
+		}
+	}
+}
